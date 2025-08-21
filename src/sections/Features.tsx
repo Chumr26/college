@@ -1,31 +1,31 @@
-import { BookOpen, Building, Users } from 'lucide-react';
+import { HandCoins, Laptop, University } from 'lucide-react';
 
 function Features() {
     const features = [
         {
-            icon: BookOpen,
-            title: 'WORLD-CLASS EDUCATION',
-            description: 'TOP-TIER FACULTY & CURRICULUM',
+            icon: HandCoins,
+            title: 'HỌC PHÍ PHÙ HỢP',
+            description: 'KHÔNG TĂNG TRONG SUỐT KHÓA HỌC',
         },
         {
-            icon: Users,
-            title: 'VIBRANT COMMUNITY',
-            description: 'DIVERSE STUDENT BODY',
+            icon: Laptop,
+            title: 'CHƯƠNG TRÌNH HỌC THỰC TẾ',
+            description: 'CHÚ TRỌNG THỰC HÀNH',
         },
         {
-            icon: Building,
-            title: 'MODERN FACILITIES',
-            description: 'STATE-OF-THE-ART CAMPUS',
+            icon: University,
+            title: 'CƠ HỘI LIÊN THÔNG',
+            description: 'TRƯỜNG ĐẠI HỌC ĐẦU NGÀNH',
         },
     ];
     return (
         <section id="campus" className="bg-white border-b-4 border-black py-16">
             <div className="container mx-auto px-4">
                 <h2 className="text-4xl md:text-6xl tracking-tighter uppercase mb-12 text-center">
-                    WHY CHOOSE
+                    VÌ SAO
                     <br />
                     <span className="bg-yellow-400 text-black px-2">
-                        BRUTALIST UNIVERSITY?
+                        CHỌN ITC?
                     </span>
                 </h2>
                 <div className="grid md:grid-cols-3 gap-8">

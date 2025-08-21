@@ -1,19 +1,33 @@
 import { Button } from '../components';
+import college_logo from '/college_logo.svg';
 
 function Header() {
     const navigationItems = [
-        { name: 'PROGRAMS', href: '#programs' },
-        { name: 'CAMPUS', href: '#campus' },
-        { name: 'ADMISSIONS', href: '#admissions' },
-        { name: 'CONTACT', href: '#contact' },
+        { name: 'ĐÀO TẠO', href: '#programs' },
+        { name: 'GIỚI THIỆU', href: '#campus' },
+        { name: 'PHÒNG BAN', href: '#admissions' },
+        { name: 'TIN TỨC', href: '#contact' },
     ];
     return (
         <header className="border-b-4 border-black bg-white relative z-50">
             {/* Header */}
             <div className="container mx-auto px-4 py-6">
                 <div className="flex items-center justify-between">
-                    <div className="text-2xl md:text-3xl tracking-tighter uppercase">
-                        BRUTALIST UNIVERSITY
+                    {/* College Logo and Name */}
+                    <div className="flex items-center gap-4">
+                        <div
+                            className="w-12 h-12 md:w-16 md:h-16 border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] 
+                        bg-white p-1 rounded-full"
+                        >
+                            <img
+                                src={college_logo}
+                                alt="College Logo"
+                                className="w-full h-full object-contain"
+                            />
+                        </div>
+                        <div className="text-2xl md:text-2xl tracking-tighter uppercase">
+                            CAO ĐẲNG <br /> CÔNG NGHỆ THÔNG TIN
+                        </div>
                     </div>
 
                     {/* Desktop Navigation */}
@@ -31,7 +45,7 @@ function Header() {
 
                     {/* Desktop Apply Button */}
                     <Button className="hidden md:flex bg-black text-white border-4 border-black hover:bg-white hover:text-black hover:border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 uppercase tracking-wide">
-                        APPLY NOW
+                        ĐĂNG NHẬP
                     </Button>
 
                     {/* Mobile Menu Button */}

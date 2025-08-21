@@ -42,9 +42,9 @@ function Programs() {
         >
             <div className="container mx-auto px-4">
                 <h2 className="text-5xl md:text-7xl tracking-tighter uppercase mb-16 text-center">
-                    ACADEMIC
+                    CHƯƠNG TRÌNH
                     <br />
-                    <span className="bg-black text-white px-2">PROGRAMS</span>
+                    <span className="bg-black text-white px-2">ĐÀO TẠO</span>
                 </h2>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

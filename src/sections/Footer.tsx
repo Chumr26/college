@@ -1,148 +1,144 @@
-import { MapPin } from "lucide-react";
+import { Mail, MapPin, Phone } from 'lucide-react';
+import React from 'react';
+
+import college_logo from '/college_logo.svg';
 
 function Footer() {
+    const collegeInfo = {
+        contacts: [
+            {
+                icon: MapPin,
+                label: '12 TRỊNH ĐÌNH THẢO, PHƯỜNG TÂN PHÚ,<br />THÀNH PHỐ HỒ CHÍ MINH',
+            },
+            {
+                icon: Phone,
+                label: '(028) 397 349 83 <br />(028) 386 050 03',
+            },
+            {
+                icon: Mail,
+                label: 'INFO@ITC.EDU.VN <br />TUYENSINH@ITC.EDU.VN',
+            },
+        ],
+        programs: ['Cao đẳng 9+', 'Cao đẳng', 'Liên thông'],
+        departments: [
+            'PHÒNG ĐÀO TẠO',
+            'PHÒNG CÔNG TÁC SINH VIÊN',
+            'PHÒNG KHẢO THÍ - ĐẢM BẢO CHẤT LƯỢNG',
+            'KHOA CÔNG NGHỆ THÔNG TIN - ĐIỆN TỬ',
+            'KHOA KINH TẾ',
+            'KHOA ĐẠI CƯƠNG',
+        ],
+        socialLinks: [
+            { name: 'FACEBOOK', href: 'https://www.facebook.com/itc.edu.vn' },
+            { name: 'TIKTOK', href: 'https://www.tiktok.com/@caodangcntt' },
+            { name: 'YOUTUBE', href: 'https://www.youtube.com/@ITC-CaodangCNTTTpHCM' },
+            { name: 'ZALO', href: 'https://zalo.me/0938861080' },
+        ],
+    };
+
     return (
         <footer id="contact" className="bg-black text-white py-16">
             <div className="container mx-auto px-4">
-                <div className="grid md:grid-cols-4 gap-12">
+                <div className="grid md:grid-cols-[2fr_1fr_1fr_1.5fr] gap-12">
                     <div>
-                        <h3 className="text-2xl mb-6 tracking-tighter uppercase">
-                            BRUTALIST
-                            <br />
-                            UNIVERSITY
-                        </h3>
-                        <p className="mb-4 uppercase tracking-wide">
-                            EXCELLENCE IN EDUCATION
-                            <br />
-                            SINCE 1962
-                        </p>
-                        <div className="flex items-center gap-2 mb-2">
-                            <MapPin className="w-4 h-4" />
-                            <span className="uppercase tracking-wide">
-                                123 UNIVERSITY AVE
-                            </span>
+                        {/* Footer Logo and University Name */}
+                        <div className="flex items-center gap-4 mb-6">
+                            <div className="w-12 h-12 border-4 border-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] bg-white p-1 rounded-full">
+                                <img
+                                    src={college_logo}
+                                    alt="University Logo"
+                                    className="w-full h-full object-contain"
+                                />
+                            </div>
+                            <h3 className="text-xl tracking-tighter uppercase">
+                                CAO ĐẲNG <br /> CÔNG NGHỆ THÔNG TIN
+                            </h3>
                         </div>
-                        <div className="uppercase tracking-wide">
-                            EDUCATION CITY, EC 12345
-                        </div>
+                        {collegeInfo.contacts.map((contact, index) => (
+                            <div
+                                key={index}
+                                className="flex items-center gap-2 mb-2"
+                            >
+                                <contact.icon className="w-4 h-4" />
+                                <span className="uppercase tracking-wide">
+                                    {contact.label
+                                        .split('<br />')
+                                        .map((line, i) => (
+                                            <React.Fragment key={i}>
+                                                {line}
+                                                {i <
+                                                    contact.label.split(
+                                                        '<br />'
+                                                    ).length -
+                                                        1 && <br />}
+                                            </React.Fragment>
+                                        ))}
+                                </span>
+                            </div>
+                        ))}
                     </div>
 
                     <div>
                         <h4 className="text-lg mb-4 tracking-wide uppercase">
-                            ACADEMICS
+                            ĐÀO TẠO
                         </h4>
                         <ul className="space-y-2 uppercase tracking-wide">
-                            <li>
-                                <a
-                                    href="#"
-                                    className="hover:text-blue-400 transition-colors"
-                                >
-                                    UNDERGRADUATE
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="#"
-                                    className="hover:text-blue-400 transition-colors"
-                                >
-                                    GRADUATE
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="#"
-                                    className="hover:text-blue-400 transition-colors"
-                                >
-                                    RESEARCH
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="#"
-                                    className="hover:text-blue-400 transition-colors"
-                                >
-                                    ONLINE PROGRAMS
-                                </a>
-                            </li>
+                            {collegeInfo.programs.map((program, index) => (
+                                <li key={index}>
+                                    <a
+                                        href="#"
+                                        className="hover:text-blue-400 transition-colors"
+                                    >
+                                        {program}
+                                    </a>
+                                </li>
+                            ))}
                         </ul>
                     </div>
 
                     <div>
                         <h4 className="text-lg mb-4 tracking-wide uppercase">
-                            STUDENT LIFE
+                            PHÒNG BAN
                         </h4>
                         <ul className="space-y-2 uppercase tracking-wide">
-                            <li>
-                                <a
-                                    href="#"
-                                    className="hover:text-blue-400 transition-colors"
-                                >
-                                    HOUSING
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="#"
-                                    className="hover:text-blue-400 transition-colors"
-                                >
-                                    DINING
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="#"
-                                    className="hover:text-blue-400 transition-colors"
-                                >
-                                    ACTIVITIES
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="#"
-                                    className="hover:text-blue-400 transition-colors"
-                                >
-                                    ATHLETICS
-                                </a>
-                            </li>
+                            {collegeInfo.departments.map(
+                                (department, index) => (
+                                    <li key={index}>
+                                        <a
+                                            href="#"
+                                            className="hover:text-blue-400 transition-colors"
+                                        >
+                                            {department}
+                                        </a>
+                                    </li>
+                                )
+                            )}
                         </ul>
                     </div>
 
                     <div>
                         <h4 className="text-lg mb-4 tracking-wide uppercase">
-                            CONNECT
+                            MẠNG XÃ HỘI
                         </h4>
                         <div className="grid grid-cols-2 gap-4">
-                            <a
-                                href="#"
-                                className="border-2 border-white hover:bg-white hover:text-black transition-colors p-3 text-center uppercase tracking-wide"
-                            >
-                                FACEBOOK
-                            </a>
-                            <a
-                                href="#"
-                                className="border-2 border-white hover:bg-white hover:text-black transition-colors p-3 text-center uppercase tracking-wide"
-                            >
-                                TWITTER
-                            </a>
-                            <a
-                                href="#"
-                                className="border-2 border-white hover:bg-white hover:text-black transition-colors p-3 text-center uppercase tracking-wide"
-                            >
-                                LINKEDIN
-                            </a>
-                            <a
-                                href="#"
-                                className="border-2 border-white hover:bg-white hover:text-black transition-colors p-3 text-center uppercase tracking-wide"
-                            >
-                                YOUTUBE
-                            </a>
+                            {collegeInfo.socialLinks.map((link, index) => (
+                                <a
+                                    key={index}
+                                    href={link.href}
+                                    target='_blank'
+                                    className="border-2 border-white hover:bg-white hover:text-black transition-colors p-3 text-center uppercase tracking-wide"
+                                >
+                                    {link.name}
+                                </a>
+                            ))}
                         </div>
                     </div>
                 </div>
 
                 <div className="border-t-4 border-white mt-12 pt-8 text-center uppercase tracking-wide">
                     <p>
-                        &copy; 2025 BRUTALIST UNIVERSITY. ALL RIGHTS RESERVED.
+                        &copy; 2025 ITC. XÂY DỰNG BỞI{' '}
+                        <span className="text-blue-500">CHỦM</span>.
                     </p>
                 </div>
             </div>

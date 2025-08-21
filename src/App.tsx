@@ -3,6 +3,7 @@ import {
     Header,
     Hero,
     Programs,
+    EducationLevels,
     Stats,
     Features,
     CTA,
@@ -15,7 +16,8 @@ function App() {
             <Header />
             <Hero />
             <Stats />
-            <Programs />
+            {/* <Programs /> */}
+            <EducationLevels />
             <Features />
             <CTA />
             <Footer />

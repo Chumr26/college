@@ -1,26 +1,26 @@
-import { Award, Building, GraduationCap, Users } from 'lucide-react';
+import { Building, GraduationCap, Handshake, Users } from 'lucide-react';
 
 function Stats() {
     const stats = [
         {
             icon: Users,
-            number: '25,000+',
-            label: 'STUDENTS ENROLLED',
+            number: '38,000+',
+            label: 'HỌC SINH, SINH VIÊN ĐÃ VÀ ĐANG HỌC TẠI TRƯỜNG',
         },
         {
             icon: GraduationCap,
-            number: '95%',
-            label: 'GRADUATION RATE',
+            number: '100%',
+            label: 'CAM KẾT HỖ TRỢ TÌM VIỆC LÀM KHI TỐT NGHIỆP',
         },
         {
-            icon: Award,
-            number: '#3',
-            label: 'NATIONAL RANKING',
+            icon: Handshake,
+            number: '500',
+            label: 'DOANH NGHIỆP ĐỐI TÁC',
         },
         {
             icon: Building,
-            number: '12',
-            label: 'CAMPUS BUILDINGS',
+            number: '24 NĂM',
+            label: 'HÌNH THÀNH VÀ PHÁT TRIỂN',
         },
     ];
     return (
