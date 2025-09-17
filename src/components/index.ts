@@ -9,3 +9,5 @@ export {
     CardDescription,
     CardContent,
 } from './card';
+
+export * as Carousel from './Carousel';

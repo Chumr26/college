@@ -1,0 +1,16 @@
+export const partners: string[] = [
+    'act',
+    'bsc',
+    'canh-cam',
+    'fclass',
+    'fpt',
+    'vietcombank',
+    'viettel',
+    'yoot',
+    'vpbank',
+    'iig',
+    'mbbank',
+    'misa',
+    'top-asian',
+    'tvu',
+];

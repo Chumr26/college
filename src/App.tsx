@@ -6,6 +6,7 @@ import {
     EducationLevels,
     Stats,
     Features,
+    Partners,
     CTA,
     Footer,
 } from './sections';
@@ -19,6 +20,7 @@ function App() {
             {/* <Programs /> */}
             <EducationLevels />
             <Features />
+            <Partners />
             <CTA />
             <Footer />
         </div>
