@@ -2,7 +2,7 @@ import './App.css';
 import {
     Header,
     Hero,
-    Programs,
+    // Programs,
     EducationLevels,
     Stats,
     Features,

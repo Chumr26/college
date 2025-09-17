@@ -1,24 +1,33 @@
 import { Button } from '../components';
 import college_logo from '/college_logo.svg';
+import { useScroll } from '../hooks';
+
+const navigationItems = [
+    { name: 'ĐÀO TẠO', href: '#programs' },
+    { name: 'GIỚI THIỆU', href: '#campus' },
+    { name: 'PHÒNG BAN', href: '#admissions' },
+    { name: 'TIN TỨC', href: '#contact' },
+];
 
 function Header() {
-    const navigationItems = [
-        { name: 'ĐÀO TẠO', href: '#programs' },
-        { name: 'GIỚI THIỆU', href: '#campus' },
-        { name: 'PHÒNG BAN', href: '#admissions' },
-        { name: 'TIN TỨC', href: '#contact' },
-    ];
+    const isScrolled = useScroll(100);
+
     return (
-        <header className="border-b-4 border-black bg-white relative z-50">
+        <header className="border-b-4 border-black bg-white z-50 sticky top-0 transition-all duration-300">
             {/* Header */}
-            <div className="container mx-auto px-4 py-6">
+            <div
+                className={`container mx-auto px-4 transition-all duration-300 ${
+                    isScrolled ? 'py-0' : 'py-4'
+                }`}
+            >
                 <div className="flex items-center justify-between">
-                    {/* College Logo and Name */}
-                    <div className="flex items-center gap-4">
-                        <div
-                            className="w-12 h-12 md:w-16 md:h-16 border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] 
-                        bg-white p-1 rounded-full"
-                        >
+                    {/* College Logo and Name - Hidden when scrolled */}
+                    <div
+                        className={`flex items-center gap-4 ${
+                            isScrolled ? 'opacity-0 hidden' : 'opacity-100'
+                        }`}
+                    >
+                        <div className="w-12 h-12 md:w-16 md:h-16 border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] bg-white p-1 rounded-full">
                             <img
                                 src={college_logo}
                                 alt="College Logo"
@@ -31,7 +40,11 @@ function Header() {
                     </div>
 
                     {/* Desktop Navigation */}
-                    <nav className="hidden md:flex space-x-8 uppercase tracking-wide">
+                    <nav
+                        className={`hidden md:flex uppercase tracking-wide transition-all duration-300 flex-1 justify-center ${
+                            isScrolled ? 'space-x-12 ' : 'space-x-8'
+                        }`}
+                    >
                         {navigationItems.map((item) => (
                             <a
                                 key={item.name}
@@ -44,7 +57,21 @@ function Header() {
                     </nav>
 
                     {/* Desktop Apply Button */}
-                    <Button className="hidden md:flex bg-black text-white border-4 border-black hover:bg-white hover:text-black hover:border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 uppercase tracking-wide">
+                    <Button
+                        className={`
+                            md:flex 
+                            bg-black text-white 
+                            border-4 border-black 
+                            shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]
+                            uppercase tracking-wide
+                            
+                            hover:bg-white hover:text-black hover:border-black
+                            hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]
+                            
+                            transition-all duration-300
+                            ${isScrolled ? 'hidden!' : ''}
+                        `}
+                    >
                         ĐĂNG NHẬP
                     </Button>
 

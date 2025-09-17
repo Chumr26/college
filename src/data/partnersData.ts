@@ -12,5 +12,4 @@ export const partners: string[] = [
     'mbbank',
     'misa',
     'top-asian',
-    'tvu',
 ];
