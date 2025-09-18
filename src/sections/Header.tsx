@@ -13,7 +13,7 @@ function Header() {
     const isScrolled = useScroll(100);
 
     return (
-        <header className="border-b-4 border-black bg-white z-50 sticky top-0 transition-all duration-300">
+        <header className="border-b-4 border-black bg-white z-50 sticky top-0">
             {/* Header */}
             <div
                 className={`container mx-auto px-4 transition-all duration-300 ${

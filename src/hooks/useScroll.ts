@@ -6,24 +6,27 @@ export function useScroll(threshold: number = 100, delay: number = 100) {
     const handleScroll = useCallback(() => {
         const scrollTop = window.scrollY;
         // Add a small buffer zone to prevent jitter
-        if (!isScrolled && scrollTop > threshold + 10) {
+        if (scrollTop > threshold) {
             setIsScrolled(true);
-        } else if (isScrolled && scrollTop < threshold - 10) {
+        } else if (scrollTop < threshold) {
             setIsScrolled(false);
         }
-    }, [isScrolled, threshold]);
+    }, [threshold]);
 
     useEffect(() => {
-        let timeoutId: number;
+        let timeoutId: NodeJS.Timeout;
 
         const debouncedScroll = () => {
             clearTimeout(timeoutId);
             timeoutId = setTimeout(() => handleScroll(), delay);
         };
 
-        window.addEventListener('scroll', debouncedScroll);
+        window.addEventListener('wheel', debouncedScroll);
+        window.addEventListener('touchmove', debouncedScroll);
+
         return () => {
-            window.removeEventListener('scroll', debouncedScroll);
+            window.removeEventListener('wheel', debouncedScroll);
+            window.removeEventListener('touchmove', debouncedScroll);
             clearTimeout(timeoutId);
         };
     }, [handleScroll, delay]);
