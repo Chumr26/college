@@ -1,45 +1,49 @@
+/* eslint-disable react-refresh/only-export-components */
 import { Mail, MapPin, Phone } from 'lucide-react';
 import React from 'react';
 
 import college_logo from '/college_logo.svg';
 
-function Footer() {
-    const collegeInfo = {
-        contacts: [
-            {
-                icon: MapPin,
-                label: '12 TRỊNH ĐÌNH THẢO, PHƯỜNG TÂN PHÚ,<br />THÀNH PHỐ HỒ CHÍ MINH',
-            },
-            {
-                icon: Phone,
-                label: '(028) 397 349 83 <br />(028) 386 050 03',
-            },
-            {
-                icon: Mail,
-                label: 'INFO@ITC.EDU.VN <br />TUYENSINH@ITC.EDU.VN',
-            },
-        ],
-        programs: ['Cao đẳng 9+', 'Cao đẳng', 'Liên thông'],
-        departments: [
-            'PHÒNG ĐÀO TẠO',
-            'PHÒNG CÔNG TÁC SINH VIÊN',
-            'PHÒNG KHẢO THÍ - ĐẢM BẢO CHẤT LƯỢNG',
-            'KHOA CÔNG NGHỆ THÔNG TIN - ĐIỆN TỬ',
-            'KHOA KINH TẾ',
-            'KHOA ĐẠI CƯƠNG',
-        ],
-        socialLinks: [
-            { name: 'FACEBOOK', href: 'https://www.facebook.com/itc.edu.vn' },
-            { name: 'TIKTOK', href: 'https://www.tiktok.com/@caodangcntt' },
-            { name: 'YOUTUBE', href: 'https://www.youtube.com/@ITC-CaodangCNTTTpHCM' },
-            { name: 'ZALO', href: 'https://zalo.me/0938861080' },
-        ],
-    };
+export const collegeInfo = {
+    contacts: [
+        {
+            icon: MapPin,
+            label: '12 TRỊNH ĐÌNH THẢO, PHƯỜNG TÂN PHÚ,<br />THÀNH PHỐ HỒ CHÍ MINH',
+        },
+        {
+            icon: Phone,
+            label: '(028) 397 349 83 <br />(028) 386 050 03',
+        },
+        {
+            icon: Mail,
+            label: 'INFO@ITC.EDU.VN <br />TUYENSINH@ITC.EDU.VN',
+        },
+    ],
+    programs: ['Cao đẳng 9+', 'Cao đẳng', 'Liên thông'],
+    departments: [
+        'PHÒNG ĐÀO TẠO',
+        'PHÒNG CÔNG TÁC SINH VIÊN',
+        'PHÒNG KHẢO THÍ - ĐẢM BẢO CHẤT LƯỢNG',
+        'KHOA CÔNG NGHỆ THÔNG TIN - ĐIỆN TỬ',
+        'KHOA KINH TẾ',
+        'KHOA ĐẠI CƯƠNG',
+    ],
+    socialLinks: [
+        { name: 'FACEBOOK', href: 'https://www.facebook.com/itc.edu.vn' },
+        { name: 'TIKTOK', href: 'https://www.tiktok.com/@caodangcntt' },
+        {
+            name: 'YOUTUBE',
+            href: 'https://www.youtube.com/@ITC-CaodangCNTTTpHCM',
+        },
+        { name: 'ZALO', href: 'https://zalo.me/0938861080' },
+    ],
+};
 
+function Footer() {
     return (
         <footer id="contact" className="bg-black text-white py-16">
             <div className="container mx-auto px-4">
-                <div className="grid md:grid-cols-[2fr_1fr_1fr_1.5fr] gap-12">
+                <div className="grid md:grid-cols-[2fr_1fr_1fr_1.5fr] gap-12 w-fit mx-auto md:mx-0 ">
                     <div>
                         {/* Footer Logo and University Name */}
                         <div className="flex items-center gap-4 mb-6">
@@ -125,7 +129,7 @@ function Footer() {
                                 <a
                                     key={index}
                                     href={link.href}
-                                    target='_blank'
+                                    target="_blank"
                                     className="border-2 border-white hover:bg-white hover:text-black transition-colors p-3 text-center uppercase tracking-wide"
                                 >
                                     {link.name}

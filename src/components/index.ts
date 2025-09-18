@@ -11,3 +11,4 @@ export {
 } from './card';
 
 export * as Carousel from './Carousel';
+export { MobileMenu } from './MobileMenu';
