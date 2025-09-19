@@ -9,16 +9,16 @@ const buttonVariants = cva(
         // Base styles for all buttons
         "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium",
         "bg-black text-white border-4 border-black",
-        // "shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]",
+        "shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]",
         "transition-all duration-200",
         // Mobile touch effects
-        // "active:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]",
+        "active:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]",
         "active:translate-y-[2px]",
         "active:translate-x-[2px]",
         "active:bg-white",
         "active:text-black",
         // Desktop hover effects
-        // "md:hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]",
+        "md:hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]",
         "md:hover:translate-y-[2px]",
         "md:hover:translate-x-[2px]",
         "md:hover:bg-white",

@@ -1,29 +1,28 @@
 import './App.css';
-import {
-    Header,
-    Hero,
-    // Programs,
-    EducationLevels,
-    Stats,
-    Features,
-    Partners,
-    CTA,
-    Footer,
-} from './sections';
+import { BrowserRouter, Route, Routes } from 'react-router';
+
+import { RootLayout } from './pages/RootLayout';
+import { Home } from './pages';
 
 function App() {
     return (
-        <div className="min-h-screen bg-white">
-            <Header />
-            <Hero />
-            <Stats />
-            {/* <Programs /> */}
-            <EducationLevels />
-            <Features />
-            <Partners />
-            <CTA />
-            <Footer />
-        </div>
+        <BrowserRouter>
+            <Routes>
+                <Route element={<RootLayout />}>
+                    <Route path="/" element={<Home />} />
+                    <Route
+                        path="/academic-affairs"
+                        element={<div>ACADEMIC AFFAIRS</div>}
+                    />
+                    <Route path="/about" element={<div>ABOUT</div>} />
+                    <Route
+                        path="/departments"
+                        element={<div>DEPARTMENTS</div>}
+                    />
+                    <Route path="/news" element={<div>NEWS</div>} />
+                </Route>
+            </Routes>
+        </BrowserRouter>
     );
 }
 

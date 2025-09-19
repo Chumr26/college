@@ -1,4 +1,4 @@
-import { Button, ImageWithFallback } from '../components';
+import { Button, ImageWithFallback } from '../../components';
 import cao_dang_9_cong from '/imgs/cao_dang_9_cong.png';
 import cao_dang from '/imgs/cao_dang.png';
 import lien_thong from '/imgs/lien_thong.jpg';

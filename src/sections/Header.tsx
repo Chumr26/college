@@ -4,12 +4,13 @@ import { Menu, X } from 'lucide-react';
 import { Button, MobileMenu } from '../components';
 import college_logo from '/college_logo.svg';
 import { useScroll, useScrollLock } from '../hooks';
+import { NavLink } from 'react-router';
 
 const navigationItems = [
-    { name: 'ĐÀO TẠO', href: '#programs' },
-    { name: 'GIỚI THIỆU', href: '#campus' },
-    { name: 'PHÒNG BAN', href: '#admissions' },
-    { name: 'TIN TỨC', href: '#contact' },
+    { name: 'ĐÀO TẠO', href: '/academic-affairs' },
+    { name: 'GIỚI THIỆU', href: '/about' },
+    { name: 'PHÒNG BAN', href: '/departments' },
+    { name: 'TIN TỨC', href: '/news' },
 ];
 
 function Header() {
@@ -32,22 +33,24 @@ function Header() {
                 >
                     <div className="flex items-center justify-between">
                         {/* College Logo and Name - Hidden when scrolled */}
-                        <div
-                            className={`flex items-center gap-4 ${
-                                isScrolled ? 'md:hidden' : ''
-                            }`}
-                        >
-                            <div className="w-12 h-12 md:w-16 md:h-16 border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] bg-white p-1 rounded-full">
-                                <img
-                                    src={college_logo}
-                                    alt="College Logo"
-                                    className="w-full h-full object-contain"
-                                />
+                        <NavLink to="/">
+                            <div
+                                className={`flex items-center gap-4 ${
+                                    isScrolled ? 'md:hidden' : ''
+                                }`}
+                            >
+                                <div className="w-12 h-12 md:w-16 md:h-16 border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] bg-white p-1 rounded-full">
+                                    <img
+                                        src={college_logo}
+                                        alt="College Logo"
+                                        className="w-full h-full object-contain"
+                                    />
+                                </div>
+                                <div className="text-lg md:text-xl lg:text-2xl tracking-tighter uppercase">
+                                    CAO ĐẲNG <br /> CÔNG NGHỆ THÔNG TIN
+                                </div>
                             </div>
-                            <div className="text-lg md:text-xl lg:text-2xl tracking-tighter uppercase">
-                                CAO ĐẲNG <br /> CÔNG NGHỆ THÔNG TIN
-                            </div>
-                        </div>
+                        </NavLink>
 
                         {/* Desktop Navigation */}
                         <nav
@@ -56,13 +59,13 @@ function Header() {
                             }`}
                         >
                             {navigationItems.map((item) => (
-                                <a
+                                <NavLink
                                     key={item.name}
-                                    href={item.href}
+                                    to={item.href}
                                     className="hover:bg-black hover:text-white px-3 py-1 transition-colors border-2 border-transparent hover:border-black"
                                 >
                                     {item.name}
-                                </a>
+                                </NavLink>
                             ))}
                         </nav>
 
