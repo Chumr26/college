@@ -62,7 +62,11 @@ function Header() {
                                 <NavLink
                                     key={item.name}
                                     to={item.href}
-                                    className="hover:bg-black hover:text-white px-3 py-1 transition-colors border-2 border-transparent hover:border-black"
+                                    className={({ isActive }) =>
+                                        `px-3 py-1 transition-colors border-2 border-transparent hover:bg-black hover:text-white hover:border-black ${
+                                            isActive && 'bg-black text-white'
+                                        }`
+                                    }
                                 >
                                     {item.name}
                                 </NavLink>
