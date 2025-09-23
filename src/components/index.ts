@@ -8,7 +8,13 @@ export {
     CardAction,
     CardDescription,
     CardContent,
-} from './card';
+} from './Card';
 
 export * as Carousel from './Carousel';
 export { MobileMenu } from './MobileMenu';
+export {
+    Accordion,
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger,
+} from './Accordion';

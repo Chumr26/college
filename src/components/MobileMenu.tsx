@@ -1,4 +1,6 @@
 import { Calendar } from 'lucide-react';
+import { NavLink } from 'react-router';
+
 import { Button } from './Button';
 import { collegeInfo } from '../sections/Footer';
 
@@ -24,9 +26,9 @@ export function MobileMenu({
                 <div className="flex-1 p-6 mt-20">
                     <nav className="space-y-4">
                         {navigationItems.map((item) => (
-                            <a
+                            <NavLink
                                 key={item.name}
-                                href={item.href}
+                                to={item.href}
                                 onClick={() => setisOpen(false)}
                                 className="block"
                             >
@@ -35,7 +37,7 @@ export function MobileMenu({
                                         {item.name}
                                     </div>
                                 </div>
-                            </a>
+                            </NavLink>
                         ))}
                     </nav>
 

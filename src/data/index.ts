@@ -1,1 +1,2 @@
-export { partners } from './partnersData';
+export { partners } from './partners';
+export { educationLevels } from './educationLevels';

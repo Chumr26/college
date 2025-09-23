@@ -2,7 +2,7 @@ import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router';
 
 import { RootLayout } from './pages/RootLayout';
-import { Home, About } from './pages';
+import { Home, About, College } from './pages';
 
 function App() {
     return (
@@ -10,16 +10,16 @@ function App() {
             <Routes>
                 <Route element={<RootLayout />}>
                     <Route path="/" element={<Home />} />
+                    <Route path="academic-affairs">
+                        <Route path="college" element={<College />} />
+                    </Route>
+
+                    <Route path="about" element={<About />} />
                     <Route
-                        path="/academic-affairs"
-                        element={<div>ACADEMIC AFFAIRS</div>}
-                    />
-                    <Route path="/about" element={<About />} />
-                    <Route
-                        path="/departments"
+                        path="departments"
                         element={<div>DEPARTMENTS</div>}
                     />
-                    <Route path="/news" element={<div>NEWS</div>} />
+                    <Route path="news" element={<div>NEWS</div>} />
                 </Route>
             </Routes>
         </BrowserRouter>

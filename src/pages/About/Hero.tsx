@@ -1,4 +1,30 @@
-import { ImageWithFallback } from "../../components";
+import { ImageWithFallback } from '../../components';
+
+const statistics = [
+    {
+        value: '7',
+        label: 'NGÀNH, NGHỀ TRUNG CẤP',
+    },
+    {
+        value: '18',
+        label: 'NGÀNH, NGHỀ CAO ĐẲNG',
+    },
+    {
+        value: '725',
+        label: 'GIẢNG VIÊN ĐÃ VÀ ĐANG LÀM VIỆC',
+    },
+    {
+        value: (
+            <>
+                14.000
+                <span className="lowercase">
+                    m<sup>2</sup>
+                </span>
+            </>
+        ),
+        label: 'DIỆN TÍCH PHÒNG HỌC',
+    },
+];
 
 export function Hero() {
     return (
@@ -46,42 +72,17 @@ export function Hero() {
                     </div>
                 </div>
                 <div className="bg-white border-4 border-black p-6 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
-                    <div className="flex justify-between gap-6 text-black text-center">
-                        <div>
-                            <div className="text-3xl tracking-tighter uppercase mb-2">
-                                7
+                    <div className="flex flex-col md:flex-row justify-between gap-6 text-black text-center">
+                        {statistics.map((stat, index) => (
+                            <div key={index}>
+                                <div className="text-3xl tracking-tighter uppercase mb-2">
+                                    {stat.value}
+                                </div>
+                                <div className="text-sm tracking-wide uppercase">
+                                    {stat.label}
+                                </div>
                             </div>
-                            <div className="text-sm tracking-wide uppercase">
-                                NGÀNH, NGHỀ TRUNG CẤP
-                            </div>
-                        </div>
-                        <div>
-                            <div className="text-3xl tracking-tighter uppercase mb-2">
-                                18
-                            </div>
-                            <div className="text-sm tracking-wide uppercase">
-                                ngành, nghề cao đẳng
-                            </div>
-                        </div>
-                        <div>
-                            <div className="text-3xl tracking-tighter uppercase mb-2">
-                                725
-                            </div>
-                            <div className="text-sm tracking-wide uppercase">
-                                GIẢNG VIÊN ĐÃ VÀ ĐANG LÀM VIỆC
-                            </div>
-                        </div>
-                        <div>
-                            <div className="text-3xl tracking-tighter uppercase mb-2">
-                                14.000
-                                <span className="lowercase">
-                                    m<sup>2</sup>
-                                </span>
-                            </div>
-                            <div className="text-sm tracking-wide uppercase">
-                                DIỆN TÍCH PHÒNG HỌC
-                            </div>
-                        </div>
+                        ))}
                     </div>
                 </div>
             </div>

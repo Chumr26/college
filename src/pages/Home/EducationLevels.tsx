@@ -1,39 +1,8 @@
+import { NavLink } from 'react-router';
 import { Button, ImageWithFallback } from '../../components';
-import cao_dang_9_cong from '/imgs/cao_dang_9_cong.png';
-import cao_dang from '/imgs/cao_dang.png';
-import lien_thong from '/imgs/lien_thong.jpg';
+import { educationLevels } from '../../data';
 
 function EducationLevels() {
-    const educationLevels = [
-        {
-            title: 'CAO ĐẲNG 9+',
-            bgColor: 'bg-red-500',
-            duration: '2,5 NĂM',
-            fields: '6 NGÀNH',
-            students: '8,000+',
-            image: cao_dang_9_cong,
-            alt: 'CAO ĐẲNG 9+',
-        },
-        {
-            title: 'CAO ĐẲNG',
-            bgColor: 'bg-blue-500',
-            duration: '2 NĂM',
-            fields: '20 NGÀNH',
-            students: '28,500+',
-            image: cao_dang,
-            alt: 'CAO ĐẲNG',
-        },
-        {
-            title: 'LIÊN THÔNG',
-            bgColor: 'bg-yellow-400',
-            duration: '1,5 NĂM',
-            fields: '9 NGÀNH',
-            students: '1,500+',
-            image: lien_thong,
-            alt: 'LIÊN THÔNG',
-        },
-    ];
-
     return (
         <section className="bg-gray-100 border-b-4 border-black py-20">
             <div className="container mx-auto px-4">
@@ -74,9 +43,11 @@ function EducationLevels() {
                                         <span>{level.students}</span>
                                     </div>
                                 </div>
-                                <Button className="w-full bg-white text-black border-4 border-black hover:bg-black hover:text-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 uppercase tracking-wide py-4">
-                                    THÔNG TIN CHI TIẾT
-                                </Button>
+                                <NavLink to={'academic-affairs/' + level.href}>
+                                    <Button className="w-full bg-white text-black border-4 border-black hover:bg-black hover:text-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 uppercase tracking-wide py-4">
+                                        THÔNG TIN CHI TIẾT
+                                    </Button>
+                                </NavLink>
                             </div>
                         </div>
                     ))}

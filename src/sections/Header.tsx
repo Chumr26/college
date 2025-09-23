@@ -1,22 +1,24 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import { NavLink } from 'react-router';
 
 import { Button, MobileMenu } from '../components';
 import college_logo from '/college_logo.svg';
 import { useScroll, useScrollLock } from '../hooks';
-import { NavLink } from 'react-router';
+import { educationLevels } from '../data';
 
 const navigationItems = [
-    { name: 'ĐÀO TẠO', href: '/academic-affairs' },
-    { name: 'GIỚI THIỆU', href: '/about' },
-    { name: 'PHÒNG BAN', href: '/departments' },
-    { name: 'TIN TỨC', href: '/news' },
+    { name: 'ĐÀO TẠO', href: 'academic-affairs', hasDropdown: true },
+    { name: 'GIỚI THIỆU', href: 'about' },
+    { name: 'PHÒNG BAN', href: 'departments' },
+    { name: 'TIN TỨC', href: 'news' },
 ];
 
 function Header() {
     const isScrolled = useScroll(100);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     useScrollLock(isMobileMenuOpen);
+    const [dropDown, setDropDown] = useState('');
 
     const handleToggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -59,17 +61,67 @@ function Header() {
                             }`}
                         >
                             {navigationItems.map((item) => (
-                                <NavLink
+                                <div
                                     key={item.name}
-                                    to={item.href}
-                                    className={({ isActive }) =>
-                                        `px-3 py-1 transition-colors border-2 border-transparent hover:bg-black hover:text-white hover:border-black ${
-                                            isActive && 'bg-black text-white'
-                                        }`
+                                    className="relative group"
+                                    onMouseEnter={() =>
+                                        item.hasDropdown &&
+                                        setDropDown(item.href)
+                                    }
+                                    onMouseLeave={() =>
+                                        item.hasDropdown && setDropDown('')
                                     }
                                 >
-                                    {item.name}
-                                </NavLink>
+                                    <NavLink
+                                        to={item.href}
+                                        onClick={(e) =>
+                                            item.hasDropdown &&
+                                            e.preventDefault()
+                                        }
+                                        className={({ isActive }) =>
+                                            `px-3 py-1 transition-colors border-2 border-transparent hover:bg-black hover:text-white hover:border-black ${
+                                                isActive &&
+                                                'bg-black text-white'
+                                            } group-hover:bg-black group-hover:text-white`
+                                        }
+                                    >
+                                        {item.name}
+                                    </NavLink>
+                                    {/* Academic Affairs Dropdown */}
+                                    {item.hasDropdown &&
+                                        dropDown === 'academic-affairs' && (
+                                            <>
+                                                <div className="absolute h-2 w-full top-full" />
+                                                <div className="absolute top-[calc(100%+8px)] left-0 w-80 bg-white border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] z-50">
+                                                    <div className="p-6 space-y-3">
+                                                        {educationLevels.map(
+                                                            (
+                                                                submenu,
+                                                                index
+                                                            ) => (
+                                                                <NavLink
+                                                                    to={
+                                                                        'academic-affairs/' +
+                                                                        submenu.href
+                                                                    }
+                                                                    key={index}
+                                                                    className="block w-full text-left group/item text-white text-sm tracking-wide uppercase"
+                                                                >
+                                                                    <div
+                                                                        className={`${submenu.bgColor} border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] group-hover/item:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 group-hover/item:-translate-y-1 p-4`}
+                                                                    >
+                                                                        {
+                                                                            submenu.title
+                                                                        }
+                                                                    </div>
+                                                                </NavLink>
+                                                            )
+                                                        )}
+                                                    </div>
+                                                </div>
+                                            </>
+                                        )}
+                                </div>
                             ))}
                         </nav>
 
@@ -113,14 +165,6 @@ function Header() {
                 setisOpen={setIsMobileMenuOpen}
                 navigationItems={navigationItems}
             />
-
-            {/* Mobile Menu Backdrop */}
-            {/* {isMobileMenuOpen && (
-                <div
-                    className="fixed inset-0 bg-black bg-opacity-50 z-30 md:hidden"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                />
-            )} */}
         </>
     );
 }
