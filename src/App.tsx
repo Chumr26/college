@@ -2,7 +2,9 @@ import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router';
 
 import { RootLayout } from './pages/RootLayout';
-import { Home, About, College } from './pages';
+import { Home } from './pages/Home';
+import { About } from './pages/About';
+import { College } from './pages/AcademicAffairs/College';
 
 function App() {
     return (

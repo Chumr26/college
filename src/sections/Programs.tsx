@@ -1,4 +1,6 @@
-import { Button, Card, ImageWithFallback } from '../components';
+import { Card } from '../components/Card';
+import { Button } from '../components/Button';
+import { ImageWithFallback } from '../components/ImageWithFallback';
 
 function Programs() {
     const programs = [

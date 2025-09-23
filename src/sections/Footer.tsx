@@ -39,7 +39,7 @@ export const collegeInfo = {
     ],
 };
 
-function Footer() {
+export function Footer() {
     return (
         <footer id="contact" className="bg-black text-white py-16">
             <div className="container mx-auto px-4">
@@ -149,5 +149,3 @@ function Footer() {
         </footer>
     );
 }
-
-export default Footer;

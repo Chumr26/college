@@ -1,5 +1,6 @@
 import { ArrowRight } from 'lucide-react';
-import { Button, ImageWithFallback } from '../../components';
+import { Button } from '../../components/Button';
+import { ImageWithFallback } from '../../components/ImageWithFallback';
 import hero from '/imgs/hero.png';
 
 function Hero() {

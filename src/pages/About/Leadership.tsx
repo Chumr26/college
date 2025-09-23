@@ -1,4 +1,5 @@
-import { Card, ImageWithFallback } from '../../components';
+import { Card } from '../../components/Card';
+import { ImageWithFallback } from '../../components/ImageWithFallback';
 
 const leadership = [
     {

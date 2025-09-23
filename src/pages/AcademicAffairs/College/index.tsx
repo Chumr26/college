@@ -3,7 +3,7 @@ import {
     AccordionContent,
     AccordionItem,
     AccordionTrigger,
-} from '../../../components';
+} from '../../../components/Accordion';
 import {
     ArrowRight,
     Award,
@@ -23,7 +23,8 @@ import {
     TrendingUp,
     Users,
 } from 'lucide-react';
-import { Button, ImageWithFallback } from '../../../components';
+import { Button } from '../../../components/Button';
+import { ImageWithFallback } from '../../../components/ImageWithFallback';
 
 export function College() {
     const undergraduatePrograms = [

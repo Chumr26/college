@@ -2,10 +2,12 @@ import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { NavLink } from 'react-router';
 
-import { Button, MobileMenu } from '../components';
+import { Button } from '../components/Button';
+import { MobileMenu } from '../components/MobileMenu';
 import college_logo from '/college_logo.svg';
-import { useScroll, useScrollLock } from '../hooks';
-import { educationLevels } from '../data';
+import { useScroll } from '../hooks/useScroll';
+import { useScrollLock } from '../hooks/useScrollLock';
+import { educationLevels } from '../data/educationLevels';
 
 const navigationItems = [
     { name: 'ĐÀO TẠO', href: 'academic-affairs', hasDropdown: true },
@@ -14,7 +16,7 @@ const navigationItems = [
     { name: 'TIN TỨC', href: 'news' },
 ];
 
-function Header() {
+export function Header() {
     const isScrolled = useScroll(100);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     useScrollLock(isMobileMenuOpen);
@@ -168,5 +170,3 @@ function Header() {
         </>
     );
 }
-
-export default Header;

@@ -1,6 +1,6 @@
-import { Carousel } from '../../components';
-import { partners } from '../../data';
-import { useCarousel } from '../../hooks';
+import * as Carousel from '../../components/Carousel';
+import { partners } from '../../data/partners';
+import { useCarousel } from '../../hooks/useCarousel';
 
 function Partners() {
     const totalSlides = partners.length;

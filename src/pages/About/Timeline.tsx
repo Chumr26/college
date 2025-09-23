@@ -1,4 +1,4 @@
-import { ImageWithFallback } from '../../components';
+import { ImageWithFallback } from '../../components/ImageWithFallback';
 
 const timeline = [
     {

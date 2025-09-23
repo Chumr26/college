@@ -1,6 +1,8 @@
 import { NavLink } from 'react-router';
-import { Button, ImageWithFallback } from '../../components';
-import { educationLevels } from '../../data';
+
+import { Button } from '../../components/Button';
+import { ImageWithFallback } from '../../components/ImageWithFallback';
+import { educationLevels } from '../../data/educationLevels';
 
 function EducationLevels() {
     return (
