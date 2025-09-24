@@ -1,5 +1,8 @@
 #TODO
 -   design academic affairs page
+    + copy writing
+    + active route
+    + start at top page when navigate, remain when back
 -   edit button
 -   optimize component reusability
 

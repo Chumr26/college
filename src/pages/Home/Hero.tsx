@@ -45,7 +45,7 @@ function Hero() {
                             />
                         </div>
                         <div className="absolute -top-4 -right-4 bg-yellow-400 text-black px-4 py-2 border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] uppercase tracking-wide">
-                            THÀNH LẬP NĂM 2001
+                            MÃ TRƯỜNG: CDC
                         </div>
                     </div>
                 </div>
