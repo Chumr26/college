@@ -51,7 +51,7 @@ export const collegeMajors: Major[] = [
         examHours: 97,
         introduction:
             'CHƯƠNG TRÌNH ĐÀO TẠO NGÀNH CÔNG NGHỆ THÔNG TIN TẠI ITC HƯỚNG ĐẾN PHÁT TRIỂN ĐỘI NGŨ KỸ SƯ THỰC HÀNH CÓ KIẾN THỨC CHUYÊN SÂU, KỸ NĂNG THỰC TIỄN VỮNG VÀNG, ĐẠO ĐỨC NGHỀ NGHIỆP TỐT VÀ KHẢ NĂNG THÍCH ỨNG LINH HOẠT VỚI MÔI TRƯỜNG CÔNG NGHỆ HIỆN ĐẠI.',
-        image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        image: '/imgs/majors/img-1.jpg',
         icon: Computer,
         color: 'bg-blue-500',
         jobOpportunities: [
@@ -77,7 +77,7 @@ export const collegeMajors: Major[] = [
         examHours: 94,
         introduction:
             'CHƯƠNG TRÌNH ĐÀO TẠO NGÀNH THIẾT KẾ ĐỒ HỌA TẠI ITC HƯỚNG ĐẾN PHÁT TRIỂN ĐỘI NGŨ NHÂN LỰC SÁNG TẠO, GIÀU Ý TƯỞNG, CÓ KỸ NĂNG CHUYÊN SÂU VÀ KHẢ NĂNG THÍCH ỨNG LINH HOẠT VỚI SỰ THAY ĐỔI NHANH CHÓNG CỦA NGÀNH CÔNG NGHIỆP THIẾT KẾ HIỆN ĐẠI',
-        image: 'https://images.unsplash.com/photo-1617695744007-68ef55752789?q=80&w=872&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        image: '/imgs/majors/img-2.jpg',
         icon: VectorSquare,
         color: 'bg-green-500',
         jobOpportunities: [
@@ -101,7 +101,7 @@ export const collegeMajors: Major[] = [
         examHours: 95,
         introduction:
             'CHƯƠNG TRÌNH ĐÀO TẠO NGÀNH LẬP TRÌNH MÁY TÍNH TẠI ITC HƯỚNG ĐẾN PHÁT TRIỂN ĐỘI NGŨ LẬP TRÌNH VIÊN GIỎI CHUYÊN MÔN, THÀNH THẠO CÔNG NGHỆ, CÓ KHẢ NĂNG SÁNG TẠO VÀ THÍCH ỨNG NHANH VỚI XU THẾ PHÁT TRIỂN CÔNG NGHỆ HIỆN ĐẠI.',
-        image: 'https://images.unsplash.com/photo-1649451844859-fdd73bf10f04?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        image: '/imgs/majors/img-3.jpg',
         icon: FileScan,
         color: 'bg-orange-500',
         jobOpportunities: [
@@ -125,7 +125,7 @@ export const collegeMajors: Major[] = [
         examHours: 88,
         introduction:
             'CHƯƠNG TRÌNH ĐÀO TẠO NGÀNH CÔNG NGHỆ KỸ THUẬT MÁY TÍNH TẠI ITC HƯỚNG ĐẾN PHÁT TRIỂN ĐỘI NGŨ KỸ THUẬT VIÊN VÀ LẬP TRÌNH VIÊN THỰC HÀNH VỮNG CHUYÊN MÔN, THÀNH THẠO CÔNG NGHỆ, THÍCH ỨNG NHANH VỚI MÔI TRƯỜNG LÀM VIỆC THỰC TẾ VÀ YÊU CẦU KỸ THUẬT HIỆN ĐẠI.',
-        image: 'https://plus.unsplash.com/premium_photo-1726863026105-b320133454e7?q=80&w=1664&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        image: '/imgs/majors/img-4.jpg',
         icon: MemoryStick,
         color: 'bg-purple-500',
 
@@ -151,7 +151,7 @@ export const collegeMajors: Major[] = [
         examHours: 104,
         introduction:
             'CHƯƠNG TRÌNH ĐÀO TẠO NGÀNH THIẾT KẾ TRANG WEB TẠI ITC HƯỚNG ĐẾN PHÁT TRIỂN ĐỘI NGŨ LẬP TRÌNH VIÊN - THIẾT KẾ VIÊN CÓ TƯ DUY LOGIC, KHẢ NĂNG SÁNG TẠO VÀ KỸ NĂNG ỨNG DỤNG CÔNG NGHỆ VÀO PHÁT TRIỂN GIAO DIỆN VÀ HỆ THỐNG WEBSITE CHUYÊN NGHIỆP.',
-        image: 'https://images.unsplash.com/photo-1487338875411-8880f74114a2?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        image: '/imgs/majors/img-5.jpg',
         icon: PanelsTopLeft,
         color: 'bg-red-600',
         jobOpportunities: [
@@ -178,7 +178,7 @@ export const collegeMajors: Major[] = [
         examHours: 83,
         introduction:
             'CHƯƠNG TRÌNH ĐÀO TẠO NGÀNH TRUYỀN THÔNG ĐA PHƯƠNG TIỆN TẠI ITC HƯỚNG ĐẾN PHÁT TRIỂN ĐỘI NGŨ NHÂN LỰC NĂNG ĐỘNG, SÁNG TẠO, CÓ KHẢ NĂNG ỨNG DỤNG CÔNG NGHỆ ĐỂ SẢN XUẤT NỘI DUNG, TRUYỀN THÔNG THƯƠNG HIỆU VÀ LÀM CHỦ CÁC NỀN TẢNG SỐ HIỆN ĐẠI.',
-        image: 'https://images.unsplash.com/photo-1557858310-9052820906f7?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        image: '/imgs/majors/img-6.jpg',
         icon: ScanEye,
         color: 'bg-teal-500',
         jobOpportunities: [
@@ -205,7 +205,7 @@ export const collegeMajors: Major[] = [
         examHours: 93,
         introduction:
             'CHƯƠNG TRÌNH ĐÀO TẠO NGÀNH TRUYỀN THÔNG VÀ MẠNG MÁY TÍNH TẠI ITC HƯỚNG ĐẾN XÂY DỰNG ĐỘI NGŨ KỸ SƯ THỰC HÀNH CÓ KIẾN THỨC VỮNG VÀNG, KỸ NĂNG CHUYÊN SÂU, SẴN SÀNG ĐÁP ỨNG NHU CẦU PHÁT TRIỂN CÔNG NGHỆ TRUYỀN THÔNG, QUẢN TRỊ VÀ BẢO MẬT HỆ THỐNG MẠNG TRONG DOANH NGHIỆP HIỆN ĐẠI.',
-        image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2034&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        image: '/imgs/majors/img-7.jpg',
         icon: Network,
         color: 'bg-indigo-500',
         jobOpportunities: [
@@ -231,7 +231,7 @@ export const collegeMajors: Major[] = [
         examHours: 100,
         introduction:
             'CHƯƠNG TRÌNH ĐÀO TẠO NGÀNH CÔNG NGHỆ KỸ THUẬT ĐIỀU KHIỂN VÀ TỰ ĐỘNG HÓA TẠI ITC TRANG BỊ CHO SINH VIÊN NỀN TẢNG VỮNG CHẮC VỀ ĐIỆN - ĐIỆN TỬ, ĐIỀU KHIỂN TỰ ĐỘNG VÀ KỸ THUẬT ROBOT, GIÚP BẠN TỰ TIN VẬN HÀNH, BẢO TRÌ VÀ THIẾT KẾ HỆ THỐNG TỰ ĐỘNG HÓA HIỆN ĐẠI TRONG MÔI TRƯỜNG CÔNG NGHIỆP.',
-        image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        image: '/imgs/majors/img-8.jpg',
         icon: Cog,
         color: 'bg-yellow-500',
         jobOpportunities: [
@@ -257,7 +257,7 @@ export const collegeMajors: Major[] = [
         examHours: 92,
         introduction:
             'CHƯƠNG TRÌNH ĐÀO TẠO NGÀNH CÔNG NGHỆ KỸ THUẬT ĐIỆN TỬ, TRUYỀN THÔNG TẠI ITC HƯỚNG ĐẾN PHÁT TRIỂN ĐỘI NGŨ KỸ THUẬT VIÊN CÓ TAY NGHỀ CAO, TƯ DUY ĐỔI MỚI, ĐÁP ỨNG TỐT YÊU CẦU THỰC TIỄN CỦA CUỘC CÁCH MẠNG CÔNG NGHIỆP 4.0.',
-        image: 'https://images.unsplash.com/photo-1727119313218-1e50eef4584b?q=80&w=2064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        image: '/imgs/majors/img-9.jpg',
         icon: CircuitBoard,
         color: 'bg-pink-500',
         jobOpportunities: [
@@ -283,7 +283,7 @@ export const collegeMajors: Major[] = [
         examHours: 88,
         introduction:
             'CHƯƠNG TRÌNH ĐÀO TẠO NGÀNH HỆ THỐNG THÔNG TIN TẠI ITC HƯỚNG ĐẾN PHÁT TRIỂN ĐỘI NGŨ NHÂN LỰC CÓ TƯ DUY LOGIC, KỸ NĂNG LẬP TRÌNH VỮNG CHẮC VÀ KHẢ NĂNG ỨNG DỤNG CÔNG NGHỆ THÔNG TIN VÀO QUẢN LÝ, VẬN HÀNH VÀ PHÁT TRIỂN HỆ THỐNG PHẦN MỀM CHO DOANH NGHIỆP HIỆN ĐẠI.',
-        image: 'https://images.unsplash.com/photo-1642775196125-38a9eb496568?q=80&w=2064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        image: '/imgs/majors/img-10.jpg',
         icon: Database,
         color: 'bg-cyan-500',
         jobOpportunities: [
@@ -309,7 +309,7 @@ export const collegeMajors: Major[] = [
         examHours: 81,
         introduction:
             'CHƯƠNG TRÌNH ĐÀO TẠO NGÀNH QUẢN TRỊ KINH DOANH TẠI ITC HƯỚNG ĐẾN XÂY DỰNG NỀN TẢNG KIẾN THỨC VỮNG CHẮC VÀ KỸ NĂNG THỰC TIỄN TRONG LĨNH VỰC DIGITAL MARKETING, GIÚP SINH VIÊN TỰ TIN HÒA NHẬP VÀO MÔI TRƯỜNG KINH DOANH HIỆN ĐẠI, NĂNG ĐỘNG VÀ CẠNH TRANH TOÀN CẦU.',
-        image: 'https://plus.unsplash.com/premium_photo-1684225764999-3597a8da10ab?q=80&w=2064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        image: '/imgs/majors/img-11.jpg',
         icon: BarChart,
         color: 'bg-rose-500',
         jobOpportunities: [
@@ -337,7 +337,7 @@ export const collegeMajors: Major[] = [
         examHours: 76,
         introduction:
             'CHƯƠNG TRÌNH ĐÀO TẠO NGÀNH MARKETING TẠI ITC HƯỚNG ĐẾN PHÁT TRIỂN ĐỘI NGŨ NHÂN SỰ NĂNG ĐỘNG, SÁNG TẠO, CÓ KHẢ NĂNG THÍCH ỨNG NHANH VỚI MÔI TRƯỜNG LÀM VIỆC THỰC TIỄN VÀ XU HƯỚNG TIẾP THỊ HIỆN ĐẠI.',
-        image: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        image: '/imgs/majors/img-12.jpg',
         icon: Briefcase,
         color: 'bg-amber-500',
         jobOpportunities: [
@@ -365,7 +365,7 @@ export const collegeMajors: Major[] = [
         examHours: 82,
         introduction:
             'CHƯƠNG TRÌNH ĐÀO TẠO NGÀNH KẾ TOÁN TẠI ITC CHÚ TRỌNG TRANG BỊ CHO SINH VIÊN KIẾN THỨC CHUYÊN MÔN VỮNG CHẮC, KỸ NĂNG THỰC HÀNH THÀNH THẠO VÀ KHẢ NĂNG LÀM VIỆC NGAY SAU KHI TỐT NGHIỆP.',
-        image: 'https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        image: '/imgs/majors/img-13.jpg',
         icon: Calculator,
         color: 'bg-emerald-500',
         jobOpportunities: [
@@ -391,7 +391,7 @@ export const collegeMajors: Major[] = [
         examHours: 82,
         introduction:
             'NGÀNH LOGISTICS TẠI ITC HƯỚNG ĐẾN ĐÀO TẠO NGUỒN NHÂN LỰC CHẤT LƯỢNG CAO, CÓ KIẾN THỨC CHUYÊN SÂU, KỸ NĂNG THỰC TIỄN VÀ TƯ DUY ĐỔI MỚI, ĐÁP ỨNG NHU CẦU NHÂN LỰC TRONG LĨNH VỰC LOGISTICS.',
-        image: 'https://images.unsplash.com/photo-1494412519320-aa613dfb7738?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        image: '/imgs/majors/img-14.jpg',
         icon: Building,
         color: 'bg-slate-500',
         jobOpportunities: [
@@ -419,7 +419,7 @@ export const collegeMajors: Major[] = [
         examHours: 103,
         introduction:
             'CHƯƠNG TRÌNH ĐÀO TẠO NGÀNH THƯƠNG MẠI ĐIỆN TỬ ITC NHẰM PHÁT TRIỂN NGUỒN NHÂN LỰC CÓ KIẾN THỨC CHUYÊN SÂU VÀ KỸ NĂNG THỰC TIỄN TRONG LĨNH VỰC KINH DOANH SỐ, ĐÁP ỨNG XU HƯỚNG CHUYỂN ĐỔI SỐ VÀ NHU CẦU TUYỂN DỤNG NGÀY CÀNG CAO CỦA DOANH NGHIỆP HIỆN ĐẠI.',
-        image: 'https://plus.unsplash.com/premium_photo-1684179639963-e141ce2f8074?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        image: '/imgs/majors/img-15.jpg',
         icon: Globe,
         color: 'bg-sky-500',
         jobOpportunities: [
@@ -446,7 +446,7 @@ export const collegeMajors: Major[] = [
         examHours: 85,
         introduction:
             'CHƯƠNG TRÌNH NGÀNH KINH DOANH XUẤT NHẬP KHẨU ITC NHẰM ĐÀO TẠO NGUỒN NHÂN LỰC CHUYÊN MÔN CAO, CÓ KHẢ NĂNG LÀM VIỆC NGAY TRONG MÔI TRƯỜNG KINH DOANH QUỐC TẾ VỚI KIẾN THỨC THỰC TIỄN VÀ KỸ NĂNG NGHỀ NGHIỆP VỮNG VÀNG.',
-        image: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        image: '/imgs/majors/img-16.jpg',
         icon: Globe,
         color: 'bg-orange-400',
         jobOpportunities: [
@@ -474,7 +474,7 @@ export const collegeMajors: Major[] = [
         examHours: 77,
         introduction:
             'CHƯƠNG TRÌNH ĐÀO TẠO NGÀNH HƯỚNG DẪN DU LỊCH TẠI ITC NHẰM TRANG BỊ CHO SINH VIÊN KIẾN THỨC CHUYÊN MÔN, KỸ NĂNG NGHỀ NGHIỆP VÀ TÁC PHONG CHUYÊN NGHIỆP ĐỂ ĐÁP ỨNG NHU CẦU TUYỂN DỤNG THỰC TẾ TRONG NGÀNH DU LỊCH NĂNG ĐỘNG VÀ PHÁT TRIỂN.',
-        image: 'https://images.unsplash.com/photo-1519055548599-6d4d129508c4?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        image: '/imgs/majors/img-17.jpg',
         icon: Map,
         color: 'bg-lime-500',
         jobOpportunities: [
@@ -500,7 +500,7 @@ export const collegeMajors: Major[] = [
         examHours: 81,
         introduction:
             'CHƯƠNG TRÌNH ĐÀO TẠO NGÀNH TÀI CHÍNH - NGÂN HÀNG TẠI ITC HƯỚNG ĐẾN VIỆC TRANG BỊ CHO SINH VIÊN NỀN TẢNG KIẾN THỨC VỮNG CHẮC CÙNG KỸ NĂNG THỰC HÀNH THỰC TẾ, ĐÁP ỨNG NHU CẦU TUYỂN DỤNG TRONG LĨNH VỰC TÀI CHÍNH - NGÂN HÀNG ĐANG KHÔNG NGỪNG PHÁT TRIỂN.',
-        image: 'https://images.unsplash.com/photo-1591033594798-33227a05780d?q=80&w=1518&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        image: '/imgs/majors/img-18.jpg',
         icon: HandCoins,
         color: 'bg-blue-400',
         jobOpportunities: [

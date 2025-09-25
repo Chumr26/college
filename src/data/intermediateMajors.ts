@@ -1,0 +1,186 @@
+import {
+    Calculator,
+    CircuitBoard,
+    Computer,
+    MemoryStick,
+    Network,
+    PanelsTopLeft,
+} from 'lucide-react';
+
+export type Major = {
+    id: number;
+    name: string;
+    code: string;
+    credits: number;
+    modules: number;
+    generalHours: number;
+    specialHours: number;
+    internHours: number;
+    assignmentHours: number;
+    examHours: number;
+    introduction: string;
+    image: string;
+    icon: React.ElementType;
+    color: string;
+    jobOpportunities: string[];
+    spots: number;
+};
+
+export const intermediateMajors: Major[] = [
+    {
+        id: 1,
+        name: 'TIN HỌC ỨNG DỤNG',
+        code: '5480205',
+        credits: 62,
+        modules: 23,
+        generalHours: 255,
+        specialHours: 1260,
+        internHours: 270,
+        assignmentHours: 85,
+        examHours: 60,
+        introduction:
+            'CHƯƠNG TRÌNH ĐÀO TẠO NGÀNH TIN HỌC ỨNG DỤNG TẠI ITC HƯỚNG ĐẾN PHÁT TRIỂN ĐỘI NGŨ KỸ THUẬT VIÊN CÔNG NGHỆ THÔNG TIN VỮNG VÀNG VỀ KIẾN THỨC, THÀNH THẠO KỸ NĂNG THỰC HÀNH VÀ KHẢ NĂNG THÍCH NGHI CAO VỚI SỰ THAY ĐỔI CỦA MÔI TRƯỜNG CÔNG NGHỆ HIỆN ĐẠI.',
+        image: '/imgs/majors/img-19.jpg',
+        icon: Computer,
+        color: 'bg-violet-500',
+        jobOpportunities: [
+            'KỸ THUẬT VIÊN CÔNG NGHỆ THÔNG TIN',
+            'QUẢN TRỊ NỘI DUNG WEBSITE',
+            'BẢO TRÌ PHẦN CỨNG & PHẦN MỀM',
+            'CÀI ĐẶT & THIẾT LẬP ỨNG DỤNG',
+            'QUẢN TRỊ HỆ THỐNG CNTT CƠ BẢN',
+            'HỖ TRỢ KỸ THUẬT CNTT',
+        ],
+        spots: 80,
+    },
+    {
+        id: 2,
+        name: 'CÔNG NGHỆ KỸ THUẬT ĐIỆN TỬ, TRUYỀN THÔNG',
+        code: '5510312',
+        credits: 62,
+        modules: 22,
+        generalHours: 255,
+        specialHours: 1449,
+        internHours: 270,
+        assignmentHours: 566,
+        examHours: 60,
+        introduction:
+            'CHƯƠNG TRÌNH ĐÀO TẠO NGÀNH CÔNG NGHỆ KỸ THUẬT ĐIỆN TỬ, TRUYỀN THÔNG TẠI ITC HƯỚNG ĐẾN PHÁT TRIỂN ĐỘI NGŨ KỸ THUẬT VIÊN CÓ KIẾN THỨC CHUYÊN MÔN VỮNG VÀNG, KỸ NĂNG THỰC HÀNH THÀNH THẠO, ĐẠO ĐỨC NGHỀ NGHIỆP TỐT VÀ KHẢ NĂNG THÍCH ỨNG VỚI MÔI TRƯỜNG CÔNG NGHỆ HIỆN ĐẠI.',
+        image: '/imgs/majors/img-20.jpg',
+        icon: CircuitBoard,
+        color: 'bg-pink-500',
+        jobOpportunities: [
+            'LẮP RÁP & BẢO TRÌ THIẾT BỊ ĐIỆN TỬ',
+            'KỸ THUẬT VIÊN THIẾT BỊ VIỄN THÔNG',
+            'QUẢN LÝ SẢN XUẤT & DỊCH VỤ',
+            'BẢO TRÌ MẠNG NỘI BỘ',
+            'KINH DOANH THIẾT BỊ ĐIỆN TỬ',
+            'DỊCH VỤ SỬA CHỮA MÁY TÍNH',
+        ],
+        spots: 80,
+    },
+    {
+        id: 3,
+        name: 'THIẾT KẾ VÀ QUẢN LÝ WEBSITE',
+        code: '5480215',
+        credits: 59,
+        modules: 22,
+        generalHours: 255,
+        specialHours: 1200,
+        internHours: 270,
+        assignmentHours: 85,
+        examHours: 57,
+        introduction:
+            'CHƯƠNG TRÌNH ĐÀO TẠO NGÀNH THIẾT KẾ VÀ QUẢN LÝ WEBSITE TẠI ITC HƯỚNG ĐẾN XÂY DỰNG NỀN TẢNG KIẾN THỨC VỮNG CHẮC VÀ KỸ NĂNG THỰC TIỄN TRONG THIẾT KẾ, LẬP TRÌNH VÀ QUẢN TRỊ WEBSITE, GIÚP SINH VIÊN TỰ TIN THAM GIA MÔI TRƯỜNG LÀM VIỆC HIỆN ĐẠI, ĐÁP ỨNG NHU CẦU DOANH NGHIỆP TRONG THỜI ĐẠI SỐ.',
+        image: '/imgs/majors/img-21.jpg',
+        icon: PanelsTopLeft,
+        color: 'bg-red-400',
+        jobOpportunities: [
+            'THIẾT KẾ & QUẢN TRỊ WEBSITE',
+            'QUẢN TRỊ NỘI DUNG SỐ',
+            'PHÁT TRIỂN GIAO DIỆN WEB',
+            'BẢO TRÌ HỆ THỐNG WEBSITE',
+            'QUẢN TRỊ HỆ THỐNG CNTT',
+            'HỖ TRỢ KỸ THUẬT WEB',
+        ],
+        spots: 80,
+    },
+    {
+        id: 4,
+        name: 'KỸ THUẬT SỬA CHỮA VÀ LẮP RÁP MÁY TÍNH',
+        code: '5480102',
+        credits: 60,
+        modules: 21,
+        generalHours: 255,
+        specialHours: 1305,
+        internHours: 270,
+        assignmentHours: 297,
+        examHours: 57,
+        introduction:
+            'CHƯƠNG TRÌNH ĐÀO TẠO NGÀNH KỸ THUẬT SỬA CHỮA VÀ LẮP RÁP MÁY TÍNH TẠI ITC HƯỚNG ĐẾN XÂY DỰNG NỀN TẢNG KIẾN THỨC VỮNG CHẮC VÀ KỸ NĂNG THỰC TIỄN TRONG LĨNH VỰC PHẦN CỨNG – THIẾT BỊ ĐIỆN TỬ, GIÚP SINH VIÊN TỰ TIN LÀM VIỆC TRONG MÔI TRƯỜNG CÔNG NGHỆ HIỆN ĐẠI VÀ LINH HOẠT THÍCH ỨNG VỚI NHU CẦU THỊ TRƯỜNG.',
+        image: '/imgs/majors/img-22.jpg',
+        icon: MemoryStick,
+        color: 'bg-zinc-500',
+        jobOpportunities: [
+            'LẮP RÁP & BẢO TRÌ MÁY TÍNH',
+            'KỸ THUẬT VIÊN THIẾT BỊ ĐIỆN TỬ',
+            'QUẢN LÝ SẢN XUẤT & DỊCH VỤ',
+            'BẢO TRÌ MẠNG NỘI BỘ',
+            'KINH DOANH THIẾT BỊ MÁY TÍNH',
+            'DỊCH VỤ SỬA CHỮA THIẾT BỊ',
+        ],
+        spots: 80,
+    },
+    {
+        id: 5,
+        name: 'QUẢN TRỊ MẠNG MÁY TÍNH',
+        code: '5480209',
+        credits: 62,
+        modules: 21,
+        generalHours: 255,
+        specialHours: 1455,
+        internHours: 270,
+        assignmentHours: 598,
+        examHours: 59,
+        introduction:
+            'CHƯƠNG TRÌNH ĐÀO TẠO NGÀNH QUẢN TRỊ MẠNG MÁY TÍNH TẠI ITC HƯỚNG ĐẾN XÂY DỰNG NỀN TẢNG KIẾN THỨC VỮNG CHẮC VÀ KỸ NĂNG THỰC TIỄN TRONG LĨNH VỰC QUẢN LÝ, VẬN HÀNH VÀ BẢO TRÌ HỆ THỐNG MẠNG, GIÚP SINH VIÊN TỰ TIN LÀM VIỆC TRONG MÔI TRƯỜNG CÔNG NGHỆ HIỆN ĐẠI VÀ ĐÁP ỨNG TỐT NHU CẦU CỦA DOANH NGHIỆP.',
+        image: '/imgs/majors/img-23.jpg',
+        icon: Network,
+        color: 'bg-blue-600',
+        jobOpportunities: [
+            'QUẢN TRỊ HỆ THỐNG MẠNG',
+            'VẬN HÀNH HẠ TẦNG MẠNG',
+            'QUẢN TRỊ HỆ THỐNG CNTT',
+            'BẢO TRÌ PHẦN CỨNG & PHẦN MỀM',
+            'THIẾT LẬP & CẤU HÌNH MẠNG',
+            'HỖ TRỢ KỸ THUẬT MẠNG',
+        ],
+        spots: 80,
+    },
+    {
+        id: 6,
+        name: 'KẾ TOÁN DOANH NGHIỆP',
+        code: '5340302',
+        credits: 60,
+        modules: 21,
+        generalHours: 255,
+        specialHours: 1325,
+        internHours: 225,
+        assignmentHours: 360,
+        examHours: 56,
+        introduction:
+            'CHƯƠNG TRÌNH ĐÀO TẠO NGÀNH KẾ TOÁN DOANH NGHIỆP TẠI ITC CHÚ TRỌNG TRANG BỊ CHO SINH VIÊN KIẾN THỨC CHUYÊN MÔN VỮNG CHẮC, KỸ NĂNG THỰC HÀNH THÀNH THẠO VÀ KHẢ NĂNG LÀM VIỆC NGAY SAU KHI TỐT NGHIỆP.',
+        image: '/imgs/majors/img-24.jpg',
+        icon: Calculator,
+        color: 'bg-emerald-500',
+        jobOpportunities: [
+            'KẾ TOÁN TỔNG HỢP DOANH NGHIỆP',
+            'KẾ TOÁN THUẾ & TÀI SẢN',
+            'QUẢN LÝ KHO & QUỸ',
+            'KẾ TOÁN TIỀN LƯƠNG & NHÂN SỰ',
+            'KẾ TOÁN VỐN & NGÂN SÁCH',
+            'KIỂM SOÁT TÀI CHÍNH',
+        ],
+        spots: 80,
+    },
+];

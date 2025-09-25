@@ -4,10 +4,15 @@ import { ChevronDownIcon } from 'lucide-react';
 
 import { cn } from './utils';
 
-function Accordion({
-    ...props
-}: React.ComponentProps<typeof AccordionPrimitive.Root>) {
-    return <AccordionPrimitive.Root data-slot="accordion" {...props} />;
+function Accordion({ ...props }) {
+    return (
+        <AccordionPrimitive.Root
+            type="single"
+            data-slot="accordion"
+            defaultValue="major-1"
+            {...props}
+        />
+    );
 }
 
 function AccordionItem({

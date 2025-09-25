@@ -5,6 +5,8 @@ import { RootLayout } from './pages/RootLayout';
 import { Home } from './pages/Home';
 import { About } from './pages/About';
 import { College } from './pages/AcademicAffairs/College';
+import { Intermediate } from './pages/AcademicAffairs/Intermediate';
+import { InterUniversity } from './pages/AcademicAffairs/InterUniversity.tsx';
 
 function App() {
     return (
@@ -14,6 +16,11 @@ function App() {
                     <Route path="/" element={<Home />} />
                     <Route path="academic-affairs">
                         <Route path="college" element={<College />} />
+                        <Route path="intermediate" element={<Intermediate />} />
+                        <Route
+                            path="inter-university"
+                            element={<InterUniversity />}
+                        />
                     </Route>
 
                     <Route path="about" element={<About />} />
