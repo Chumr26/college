@@ -1,36 +1,37 @@
-import type { CollegeMajor } from '../../data/collegeMajors';
-import { InfoCard } from './InfoCard';
+import type { Major } from '../../data/collegeMajors';
+// import { InfoCard } from './InfoCard';
 import { HighlightsCard } from './HighlightsCard';
 import { MetricsCard } from './MetricsCard';
 
-export function DetailsPanel({ program }: { program: CollegeMajor }) {
+export function DetailsPanel({ major }: { major: Major }) {
     return (
-        <div className="grid lg:grid-cols-3 gap-8">
-            <InfoCard
-                color={program.color}
-                image={program.image}
-                name={program.name}
-                description={program.description}
-                employmentRate={program.employmentRate}
-                averageSalary={program.averageSalary}
-            />
+        <div className="grid lg:grid-cols-2 gap-8">
+            {/* <InfoCard
+                color={major.color}
+                image={major.image}
+                name={major.name}
+                description={major.description}
+                employmentRate={major.employmentRate}
+                averageSalary={major.averageSalary}
+            /> */}
 
             {/* Highlights Card */}
             <HighlightsCard
-                introduction={program.introduction}
-                specializations={program.specializations}
-                jobOpportunities={program.jobOpportunities}
+                introduction={major.introduction}
+                jobOpportunities={major.jobOpportunities}
+                image={major.image}
+                name={major.name}
             />
 
             {/* Metrics Card */}
             <MetricsCard
-                modules={program.modules}
-                credits={program.credits}
-                hoursPerWeek={program.hoursPerWeek}
-                duration={program.duration}
-                theoryPercent={program.theoryPercent}
-                practicePercent={program.practicePercent}
-                careerPaths={program.careerPaths}
+                modules={major.modules}
+                credits={major.credits}
+                generalHours={major.generalHours}
+                specialHours={major.specialHours}
+                internHours={major.internHours}
+                assignmentHours={major.assignmentHours}
+                examHours={major.examHours}
             />
         </div>
     );
