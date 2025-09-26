@@ -107,15 +107,24 @@ export function Header() {
                                                                         submenu.href
                                                                     }
                                                                     key={index}
-                                                                    className="block w-full text-left group/item text-white text-sm tracking-wide uppercase"
+                                                                    className="block w-full text-left group/item text-white text-sm tracking-wide uppercase relative"
                                                                 >
-                                                                    <div
-                                                                        className={`${submenu.bgColor} border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] group-hover/item:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 group-hover/item:-translate-y-1 p-4`}
-                                                                    >
-                                                                        {
-                                                                            submenu.title
-                                                                        }
-                                                                    </div>
+                                                                    {({
+                                                                        isActive,
+                                                                    }) => (
+                                                                        <>
+                                                                            <div
+                                                                                className={`${submenu.bgColor} border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] group-hover/item:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 group-hover/item:-translate-y-1 p-4`}
+                                                                            >
+                                                                                {
+                                                                                    submenu.title
+                                                                                }
+                                                                            </div>
+                                                                            {isActive && (
+                                                                                <span className="absolute top-0 -left-3 bottom-1 bg-black w-0.5"></span>
+                                                                            )}
+                                                                        </>
+                                                                    )}
                                                                 </NavLink>
                                                             )
                                                         )}

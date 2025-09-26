@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Route, Routes } from 'react-router';
+import { createBrowserRouter, RouterProvider } from 'react-router';
 
 import { RootLayout } from './pages/RootLayout';
 import { Home } from './pages/Home';
@@ -7,32 +7,30 @@ import { About } from './pages/About';
 import { College } from './pages/AcademicAffairs/College';
 import { Intermediate } from './pages/AcademicAffairs/Intermediate';
 import { InterUniversity } from './pages/AcademicAffairs/InterUniversity.tsx';
+import { Department } from './pages/Department/index.tsx';
+
+const router = createBrowserRouter([
+    {
+        Component: RootLayout,
+        children: [
+            { index: true, Component: Home },
+            {
+                path: 'academic-affairs',
+                children: [
+                    { path: 'college', Component: College },
+                    { path: 'intermediate', Component: Intermediate },
+                    { path: 'inter-university', Component: InterUniversity },
+                ],
+            },
+            { path: 'about', Component: About },
+            { path: 'departments', Component: Department },
+            { path: 'news', element: <div>NEWS</div> },
+        ],
+    },
+]);
 
 function App() {
-    return (
-        <BrowserRouter>
-            <Routes>
-                <Route element={<RootLayout />}>
-                    <Route path="/" element={<Home />} />
-                    <Route path="academic-affairs">
-                        <Route path="college" element={<College />} />
-                        <Route path="intermediate" element={<Intermediate />} />
-                        <Route
-                            path="inter-university"
-                            element={<InterUniversity />}
-                        />
-                    </Route>
-
-                    <Route path="about" element={<About />} />
-                    <Route
-                        path="departments"
-                        element={<div>DEPARTMENTS</div>}
-                    />
-                    <Route path="news" element={<div>NEWS</div>} />
-                </Route>
-            </Routes>
-        </BrowserRouter>
-    );
+    return <RouterProvider router={router} />;
 }
 
 export default App;

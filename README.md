@@ -1,8 +1,9 @@
 #TODO
--   design academic affairs page
-    + copy writing
-    + active route
-    + start at top page when navigate, remain when back
+-   design academic affairs page (ok)
+    + copy writing (ok)
+    + active route (ok)
+    + start at top page when navigate, remain when back (ok)
+-   design department page (ok)
 -   edit button
 -   optimize component reusability
 
