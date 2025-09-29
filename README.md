@@ -5,6 +5,7 @@
     + start at top page when navigate, remain when back (ok)
 -   design department page (ok)
 -   design news page (ok)
+-   design authentication modal
 -   edit button
 -   optimize component reusability
 -   update mobile menu

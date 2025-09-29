@@ -16,7 +16,11 @@ const navigationItems = [
     { name: 'TIN TỨC', href: 'news' },
 ];
 
-export function Header() {
+export function Header({
+    setIsAuthModalOpen,
+}: {
+    setIsAuthModalOpen: (isOpen: boolean) => void;
+}) {
     const isScrolled = useScroll(100);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     useScrollLock(isMobileMenuOpen);
@@ -139,19 +143,20 @@ export function Header() {
                         {/* Desktop Apply Button */}
                         <Button
                             className={`
-                            hidden
-                            md:flex 
-                            bg-black text-white 
-                            border-4 border-black 
-                            shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]
-                            uppercase tracking-wide
-                            
-                            hover:bg-white hover:text-black hover:border-black
-                            hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]
-                            
-                            transition-all duration-300
-                            ${isScrolled ? 'hidden!' : ''}
-                        `}
+                                hidden
+                                md:flex 
+                                bg-black text-white 
+                                border-4 border-black 
+                                shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]
+                                uppercase tracking-wide
+                                
+                                hover:bg-white hover:text-black hover:border-black
+                                hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]
+                                
+                                transition-all duration-300
+                                ${isScrolled ? 'hidden!' : ''}
+                            `}
+                            onClick={() => setIsAuthModalOpen(true)}
                         >
                             ĐĂNG NHẬP
                         </Button>
