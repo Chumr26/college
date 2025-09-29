@@ -4,8 +4,10 @@
     + active route (ok)
     + start at top page when navigate, remain when back (ok)
 -   design department page (ok)
+-   design news page (ok)
 -   edit button
 -   optimize component reusability
+-   update mobile menu
 
 # React + TypeScript + Vite
 

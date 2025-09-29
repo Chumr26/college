@@ -8,6 +8,7 @@ import { College } from './pages/AcademicAffairs/College';
 import { Intermediate } from './pages/AcademicAffairs/Intermediate';
 import { InterUniversity } from './pages/AcademicAffairs/InterUniversity.tsx';
 import { Department } from './pages/Department/index.tsx';
+import { News } from './pages/News/index.tsx';
 
 const router = createBrowserRouter([
     {
@@ -24,7 +25,7 @@ const router = createBrowserRouter([
             },
             { path: 'about', Component: About },
             { path: 'departments', Component: Department },
-            { path: 'news', element: <div>NEWS</div> },
+            { path: 'news', Component: News },
         ],
     },
 ]);
