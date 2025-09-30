@@ -35,7 +35,7 @@ export function ModeSwitcher({
             {authMode === 'login' ? (
                 <div>
                     <p className="text-sm uppercase tracking-wide mb-4">
-                        FORGOT YOUR PASSWORD?
+                        QUÊN MẬT KHẨU?
                     </p>
                     <Button
                         type="button"
@@ -43,14 +43,14 @@ export function ModeSwitcher({
                         variant="outline"
                         className="border-4 border-black bg-white text-black hover:bg-black hover:text-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 px-6 py-3 uppercase tracking-wide"
                     >
-                        RESET PASSWORD
+                        ĐẶT LẠI MẬT KHẨU
                         <Key className="w-4 h-4 ml-2" />
                     </Button>
                 </div>
             ) : (
                 <div>
                     <p className="text-sm uppercase tracking-wide mb-4">
-                        REMEMBER YOUR PASSWORD?
+                        NHỚ MẬT KHẨU?
                     </p>
                     <Button
                         type="button"
@@ -59,7 +59,7 @@ export function ModeSwitcher({
                         className="border-4 border-black bg-white text-black hover:bg-black hover:text-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 px-6 py-3 uppercase tracking-wide"
                     >
                         <ArrowLeft className="w-4 h-4 mr-2" />
-                        BACK TO LOGIN
+                        TRỞ VỀ ĐĂNG NHẬP
                     </Button>
                 </div>
             )}

@@ -11,12 +11,12 @@ export function Submit({ authMode }: { authMode: 'login' | 'forgot' }) {
         >
             {authMode === 'login' ? (
                 <>
-                    LOGIN TO PORTAL
+                    ĐĂNG NHẬP
                     <LogIn className="w-5 h-5 ml-2" />
                 </>
             ) : (
                 <>
-                    SEND RESET LINK
+                    GỬI LIÊN KẾT ĐẶT LẠI
                     <ArrowRight className="w-5 h-5 ml-2" />
                 </>
             )}

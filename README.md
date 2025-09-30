@@ -5,10 +5,11 @@
     + start at top page when navigate, remain when back (ok)
 -   design department page (ok)
 -   design news page (ok)
--   design authentication modal
+-   design authentication modal (ok)
 -   edit button
 -   optimize component reusability
 -   update mobile menu
+-   mobile compatibility
 
 # React + TypeScript + Vite
 

@@ -11,30 +11,30 @@ export function AdditionalInfo({ authMode }: { authMode: 'login' | 'forgot' }) {
                     <>
                         <div className="flex items-center gap-2">
                             <div className="w-2 h-2 bg-black border border-black"></div>
-                            VIEW GRADES & TRANSCRIPTS
+                            XEM ĐIỂM SỐ VÀ KẾT QUẢ HỌC TẬP
                         </div>
                         <div className="flex items-center gap-2">
                             <div className="w-2 h-2 bg-black border border-black"></div>
-                            MANAGE COURSE REGISTRATION
+                            QUẢN LÝ ĐĂNG KÝ MÔN
                         </div>
                         <div className="flex items-center gap-2">
                             <div className="w-2 h-2 bg-black border border-black"></div>
-                            ACCESS CAMPUS RESOURCES
+                            TRUY CẬP TÀI LIỆU HỌC TẬP VÀ THÔNG BÁO
                         </div>
                     </>
                 ) : (
                     <>
                         <div className="flex items-center gap-2">
                             <div className="w-2 h-2 bg-black border border-black"></div>
-                            SECURE PASSWORD RESET PROCESS
+                            QUY TRÌNH ĐẶT LẠI MẬT KHẨU BẢO MẬT
                         </div>
                         <div className="flex items-center gap-2">
                             <div className="w-2 h-2 bg-black border border-black"></div>
-                            EMAIL VERIFICATION REQUIRED
+                            CẦN XÁC MINH EMAIL
                         </div>
                         <div className="flex items-center gap-2">
                             <div className="w-2 h-2 bg-black border border-black"></div>
-                            RESET LINK EXPIRES IN 24 HOURS
+                            LIÊN KẾT ĐẶT LẠI HẾT HẠN SAU 24 GIỜ
                         </div>
                     </>
                 )}

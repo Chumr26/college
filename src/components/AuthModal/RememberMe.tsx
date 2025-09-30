@@ -25,7 +25,7 @@ export function RememberMe({
                     htmlFor="rememberMe"
                     className="text-sm uppercase tracking-wide"
                 >
-                    REMEMBER ME
+                    GHI NHỚ ĐĂNG NHẬP
                 </Label>
             </div>
         )

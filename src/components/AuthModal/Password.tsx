@@ -21,7 +21,7 @@ export function Password({
             <div>
                 <Label className="text-sm uppercase tracking-wide mb-2 flex items-center gap-2">
                     <Lock className="w-4 h-4" />
-                    PASSWORD *
+                    MẬT KHẨU *
                 </Label>
                 <div className="relative">
                     <Input
@@ -37,7 +37,7 @@ export function Password({
                     <button
                         type="button"
                         onClick={() => setShowPassword(!showPassword)}
-                        className="absolute right-3 top-1/2 transform -translate-y-1/2 hover:bg-gray-100 p-1 border-2 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]"
+                        className="absolute right-3 top-1/2 transform -translate-y-1/2"
                     >
                         {showPassword ? (
                             <EyeOff className="w-4 h-4" />

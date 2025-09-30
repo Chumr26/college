@@ -189,3 +189,7 @@
 html {
     font-size: var(--font-size);
 }
+
+input::-ms-reveal {
+    display: none;
+}

@@ -33,13 +33,13 @@ export function ModalHeader({
                 <div>
                     <DialogTitle className="text-3xl md:text-4xl tracking-tighter uppercase text-white">
                         {authMode === 'login'
-                            ? 'STUDENT LOGIN'
-                            : 'RESET PASSWORD'}
+                            ? 'ĐĂNG NHẬP'
+                            : 'ĐẶT LẠI MẬT KHẨU'}
                     </DialogTitle>
                     <p className="text-sm uppercase tracking-wide text-white opacity-90 mt-1">
                         {authMode === 'login'
-                            ? 'ACCESS YOUR STUDENT PORTAL'
-                            : 'RECOVER YOUR ACCOUNT ACCESS'}
+                            ? 'TRUY CẬP CỔNG THÔNG TIN SINH VIÊN'
+                            : 'KHÔI PHỤC TRUY CẬP TÀI KHOẢN CỦA BẠN'}
                     </p>
                 </div>
             </div>
