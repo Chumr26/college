@@ -8,7 +8,7 @@
 -   design authentication modal (ok)
 -   edit button
 -   optimize component reusability
--   update mobile menu
+-   update mobile menu (doing)
 -   mobile compatibility
 
 # React + TypeScript + Vite

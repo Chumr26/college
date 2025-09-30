@@ -9,7 +9,13 @@ import { useScroll } from '../hooks/useScroll';
 import { useScrollLock } from '../hooks/useScrollLock';
 import { educationLevels } from '../data/educationLevels';
 
-const navigationItems = [
+export type NavigationItem = {
+    name: string;
+    href: string;
+    hasDropdown?: boolean;
+};
+
+const navigationItems: NavigationItem[] = [
     { name: 'ĐÀO TẠO', href: 'academic-affairs', hasDropdown: true },
     { name: 'GIỚI THIỆU', href: 'about' },
     { name: 'PHÒNG BAN', href: 'departments' },
@@ -41,7 +47,10 @@ export function Header({
                 >
                     <div className="flex items-center justify-between">
                         {/* College Logo and Name - Hidden when scrolled */}
-                        <NavLink to="/">
+                        <NavLink
+                            to="/"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                        >
                             <div
                                 className={`flex items-center gap-4 ${
                                     isScrolled ? 'md:hidden' : ''
@@ -140,7 +149,7 @@ export function Header({
                             ))}
                         </nav>
 
-                        {/* Desktop Apply Button */}
+                        {/* Desktop Login Button */}
                         <Button
                             className={`
                                 hidden
@@ -180,6 +189,7 @@ export function Header({
                 isOpen={isMobileMenuOpen}
                 setisOpen={setIsMobileMenuOpen}
                 navigationItems={navigationItems}
+                setIsAuthModalOpen={setIsAuthModalOpen}
             />
         </>
     );

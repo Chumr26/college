@@ -1,7 +1,10 @@
+import { NavLink } from 'react-router';
+
 import { ArrowRight } from 'lucide-react';
+
+import hero from '/imgs/hero.png';
 import { Button } from '../../components/Button';
 import { ImageWithFallback } from '../../components/ImageWithFallback';
-import hero from '/imgs/hero.png';
 
 function Hero() {
     return (
@@ -28,12 +31,14 @@ function Hero() {
                                 TUYỂN SINH
                                 <ArrowRight className="w-5 h-5 ml-2" />
                             </Button>
-                            <Button
-                                variant="outline"
-                                className="border-4 border-white bg-transparent text-white hover:bg-white hover:text-black shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] active:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] transition-all duration-200 px-8 py-6 uppercase tracking-wide"
-                            >
-                                GIỚI THIỆU
-                            </Button>
+                            <NavLink to="/about" className="w-full md:w-auto">
+                                <Button
+                                    variant="outline"
+                                    className="w-full md:w-auto border-4 border-white bg-transparent text-white hover:bg-white hover:text-black shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] active:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] transition-all duration-200 px-8 py-6 uppercase tracking-wide"
+                                >
+                                    GIỚI THIỆU
+                                </Button>
+                            </NavLink>
                         </div>
                     </div>
                     <div className="relative">
