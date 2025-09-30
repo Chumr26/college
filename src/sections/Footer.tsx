@@ -3,6 +3,8 @@ import { Mail, MapPin, Phone } from 'lucide-react';
 import React from 'react';
 
 import college_logo from '/college_logo.svg';
+import { faculties } from '../pages/Department/Faculties';
+import { departments } from '../data/departments';
 
 export const collegeInfo = {
     contacts: [
@@ -43,7 +45,7 @@ export function Footer() {
     return (
         <footer id="contact" className="bg-black text-white py-16">
             <div className="container mx-auto px-4">
-                <div className="grid md:grid-cols-[2fr_1fr_1fr_1.5fr] gap-12 w-fit mx-auto md:mx-0 ">
+                <div className="grid md:grid-cols-[2fr_0.7fr_1.3fr_1.3fr_0.7fr] gap-12 w-fit mx-auto md:mx-0 ">
                     <div>
                         {/* Footer Logo and University Name */}
                         <div className="flex items-center gap-4 mb-6">
@@ -102,21 +104,36 @@ export function Footer() {
 
                     <div>
                         <h4 className="text-lg mb-4 tracking-wide uppercase">
-                            PHÒNG BAN
+                            KHOA
                         </h4>
                         <ul className="space-y-2 uppercase tracking-wide">
-                            {collegeInfo.departments.map(
-                                (department, index) => (
-                                    <li key={index}>
-                                        <a
-                                            href="#"
-                                            className="hover:text-blue-400 transition-colors"
-                                        >
-                                            {department}
-                                        </a>
-                                    </li>
-                                )
-                            )}
+                            {faculties.map((faculty) => (
+                                <li key={faculty.name}>
+                                    <a
+                                        href="#"
+                                        className="hover:text-blue-400 transition-colors"
+                                    >
+                                        {faculty.name}
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 className="text-lg mb-4 tracking-wide uppercase">
+                            PHÒNG
+                        </h4>
+                        <ul className="space-y-2 uppercase tracking-wide">
+                            {departments.map((department, index) => (
+                                <li key={index}>
+                                    <a
+                                        href="#"
+                                        className="hover:text-blue-400 transition-colors"
+                                    >
+                                        {department.name}
+                                    </a>
+                                </li>
+                            ))}
                         </ul>
                     </div>
 
@@ -124,7 +141,7 @@ export function Footer() {
                         <h4 className="text-lg mb-4 tracking-wide uppercase">
                             MẠNG XÃ HỘI
                         </h4>
-                        <div className="grid grid-cols-2 gap-4">
+                        <div className="flex flex-col gap-3">
                             {collegeInfo.socialLinks.map((link, index) => (
                                 <a
                                     key={index}

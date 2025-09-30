@@ -1,4 +1,5 @@
-const faculties = [
+// eslint-disable-next-line react-refresh/only-export-components
+export const faculties = [
     {
         name: 'KHOA CÔNG NGHỆ THÔNG TIN - ĐIỆN TỬ',
         dean: 'THS NGUYỄN TRUNG KIÊN',
