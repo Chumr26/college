@@ -60,11 +60,8 @@ export function AuthModal({ isOpen, onClose }: AuthModalProps) {
     };
 
     return (
-        <Dialog
-            open={isOpen}
-            onOpenChange={resetAndClose}
-        >
-            <DialogContent className="max-w-lg p-0 bg-white border-4 border-black shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] gap-0">
+        <Dialog open={isOpen} onOpenChange={resetAndClose}>
+            <DialogContent className="max-w-lg p-0 bg-white border-4 border-black shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] gap-0 overflow-y-scroll">
                 <DialogHeader className="p-0">
                     {/* Modal Header */}
                     <ModalHeader

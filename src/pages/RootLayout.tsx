@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Outlet, ScrollRestoration } from 'react-router';
 
-import { Header } from '../sections/Header';
+import { Header } from '../sections/Header/Desktop';
 import { Footer } from '../sections/Footer';
 import { AuthModal } from '../components/AuthModal';
 

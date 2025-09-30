@@ -21,11 +21,6 @@ export function AccordionTrigger({ major }: { major: Major }) {
                                     {major.code}
                                 </span>
                             </div>
-                            {/* <div className="bg-gray-100 border-2 border-black px-3 py-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                                <span className="text-sm tracking-wide uppercase">
-                                    {major.duration}
-                                </span>
-                            </div> */}
                             <div className="bg-red-500 border-2 border-black px-3 py-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
                                 <span className="text-sm tracking-wide uppercase text-white">
                                     {major.spots} CHỈ TIÊU

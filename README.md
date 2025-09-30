@@ -8,8 +8,13 @@
 -   design authentication modal (ok)
 -   edit button
 -   optimize component reusability
--   update mobile menu (doing)
--   mobile compatibility
+-   update mobile menu (ok)
+-   refacactor dropdown menu (ok)
+-   make dropdown float (no)
+-   apply form 
+-   update footer 
+-   mobile compatibility (ok)
+-   dark mode
 
 # React + TypeScript + Vite
 
