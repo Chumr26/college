@@ -9,6 +9,7 @@ import { Intermediate } from './pages/AcademicAffairs/Intermediate';
 import { InterUniversity } from './pages/AcademicAffairs/InterUniversity.tsx';
 import { Department } from './pages/Department/index.tsx';
 import { News } from './pages/News/index.tsx';
+import { Apply } from './pages/Apply/index.tsx';
 
 const router = createBrowserRouter([
     {
@@ -26,6 +27,7 @@ const router = createBrowserRouter([
             { path: 'about', Component: About },
             { path: 'departments', Component: Department },
             { path: 'news', Component: News },
+            { path: 'apply', Component: Apply },
         ],
     },
 ]);

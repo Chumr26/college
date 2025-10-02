@@ -6,14 +6,15 @@
 -   design department page (ok)
 -   design news page (ok)
 -   design authentication modal (ok)
--   edit button
--   optimize component reusability
 -   update mobile menu (ok)
 -   refacactor dropdown menu (ok)
 -   make dropdown float (no)
--   apply form 
--   update footer 
+-   update footer (ok)
 -   mobile compatibility (ok)
+-   apply form (ok)
+-   apply form navigation 
+-   edit button
+-   optimize component reusability
 -   dark mode
 
 # React + TypeScript + Vite

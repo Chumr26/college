@@ -27,10 +27,12 @@ function Hero() {
                             hợp tác và cùng phát triển
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <Button className="bg-white text-black border-4 border-black hover:bg-black hover:text-white shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 px-8 py-6 uppercase tracking-wide">
-                                TUYỂN SINH
-                                <ArrowRight className="w-5 h-5 ml-2" />
-                            </Button>
+                            <NavLink to="/apply" className="w-full md:w-auto">
+                                <Button className="bg-white text-black border-4 border-black hover:bg-black hover:text-white shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 px-8 py-6 uppercase tracking-wide">
+                                    NỘP HỒ SƠ
+                                    <ArrowRight className="w-5 h-5 ml-2" />
+                                </Button>
+                            </NavLink>
                             <NavLink to="/about" className="w-full md:w-auto">
                                 <Button
                                     variant="outline"

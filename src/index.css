@@ -193,3 +193,26 @@ html {
 input::-ms-reveal {
     display: none;
 }
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    font-size: 18px;
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* For WebKit browsers (Chrome, Safari, Edge, Opera) */
+#application-form input[type="number"]::-webkit-inner-spin-button,
+#application-form input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    /* Optional: Removes any default margin */
+}
+
+/* For Firefox */
+#application-form input[type="number"] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+}

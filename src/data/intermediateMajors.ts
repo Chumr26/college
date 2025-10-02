@@ -6,25 +6,7 @@ import {
     Network,
     PanelsTopLeft,
 } from 'lucide-react';
-
-export type Major = {
-    id: number;
-    name: string;
-    code: string;
-    credits: number;
-    modules: number;
-    generalHours: number;
-    specialHours: number;
-    internHours: number;
-    assignmentHours: number;
-    examHours: number;
-    introduction: string;
-    image: string;
-    icon: React.ElementType;
-    color: string;
-    jobOpportunities: string[];
-    spots: number;
-};
+import type { Major } from './collegeMajors';
 
 export const intermediateMajors: Major[] = [
     {

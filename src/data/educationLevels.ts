@@ -1,6 +1,9 @@
 import cao_dang_9_cong from '/imgs/cao_dang_9_cong.png';
 import cao_dang from '/imgs/cao_dang.png';
 import lien_thong from '/imgs/lien_thong.jpg';
+import { collegeMajors, type Major } from './collegeMajors';
+import { intermediateMajors } from './intermediateMajors';
+import { interUniversityMajors } from './interUniversityMajors';
 
 export type EducationLevel = {
     title: string;
@@ -12,6 +15,7 @@ export type EducationLevel = {
     image: string;
     alt: string;
     href: string;
+    majors: Major[];
 };
 
 export const educationLevels: EducationLevel[] = [
@@ -25,6 +29,7 @@ export const educationLevels: EducationLevel[] = [
         image: cao_dang_9_cong,
         alt: 'CAO ĐẲNG 9+',
         href: 'intermediate',
+        majors: intermediateMajors,
     },
     {
         title: 'CAO ĐẲNG',
@@ -36,6 +41,7 @@ export const educationLevels: EducationLevel[] = [
         image: cao_dang,
         alt: 'CAO ĐẲNG',
         href: 'college',
+        majors: collegeMajors,
     },
     {
         title: 'LIÊN THÔNG',
@@ -47,5 +53,6 @@ export const educationLevels: EducationLevel[] = [
         image: lien_thong,
         alt: 'LIÊN THÔNG',
         href: 'inter-university',
+        majors: interUniversityMajors,
     },
 ];
