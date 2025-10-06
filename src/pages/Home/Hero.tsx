@@ -28,7 +28,7 @@ function Hero() {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
                             <NavLink to="/apply" className="w-full md:w-auto">
-                                <Button className="bg-white text-black border-4 border-black hover:bg-black hover:text-white shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 px-8 py-6 uppercase tracking-wide">
+                                <Button className="w-full md:w-auto bg-white text-black border-4 border-black hover:bg-black hover:text-white shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 px-8 py-6 uppercase tracking-wide">
                                     NỘP HỒ SƠ
                                     <ArrowRight className="w-5 h-5 ml-2" />
                                 </Button>

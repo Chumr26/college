@@ -10,11 +10,13 @@
 -   refacactor dropdown menu (ok)
 -   make dropdown float (no)
 -   update footer (ok)
--   mobile compatibility (ok)
 -   apply form (ok)
+-   apply link at home page
 -   apply form navigation 
+-   not found page
 -   edit button
 -   optimize component reusability
+-   mobile manual testing
 -   dark mode
 
 # React + TypeScript + Vite
