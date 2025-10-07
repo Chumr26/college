@@ -1,4 +1,12 @@
-export const news = [
+export type NewsItem = {
+    id: number;
+    title: string;
+    image: string;
+    date: string;
+    readTime: string;
+    views: string;
+};
+export const news: NewsItem[] = [
     {
         id: 1,
         title: 'Chào mừng buổi học đầu tiên của tân sinh viên ITC K25 - đợt 4',

@@ -1,90 +1,116 @@
-#TODO
--   design academic affairs page (ok)
-    + copy writing (ok)
-    + active route (ok)
-    + start at top page when navigate, remain when back (ok)
--   design department page (ok)
--   design news page (ok)
--   design authentication modal (ok)
--   update mobile menu (ok)
--   refacactor dropdown menu (ok)
--   make dropdown float (no)
--   update footer (ok)
--   apply form (ok)
--   apply link at home page
--   apply form navigation 
--   not found page
--   edit button
--   optimize component reusability
--   mobile manual testing
--   dark mode
+# ITC College Management Website
 
-# React + TypeScript + Vite
+A modern, responsive website for ITC College, built with React, TypeScript, Vite, and Tailwind CSS. The site provides information about academic programs, departments, admissions, news, and more for prospective and current students.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features
 
-Currently, two official plugins are available:
+-   **Homepage**: Hero section, statistics, features, partner logos, and call-to-action.
+-   **Academic Affairs**: Detailed info on all education levels (Cao đẳng 9+, Cao đẳng, Liên thông), including available majors and program metrics.
+-   **Departments**: Overview of all departments, faculties, and centers with introductions and contact info.
+-   **Admissions**: Online application form with multi-step process and submission confirmation.
+-   **News**: List and details of news articles and events.
+-   **About**: School history, vision & mission, timeline, and leadership.
+-   **Responsive Design**: Fully responsive for desktop and mobile devices.
+-   **Accessibility**: Semantic HTML and accessible components.
 
--   [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
--   [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
 
-## Expanding the ESLint configuration
+-   [React](https://react.dev/)
+-   [TypeScript](https://www.typescriptlang.org/)
+-   [Vite](https://vitejs.dev/)
+-   [Tailwind CSS](https://tailwindcss.com/)
+-   [Lucide React Icons](https://lucide.dev/)
+-   [Radix UI Primitives](https://www.radix-ui.com/)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Project Structure
 
-```js
-export default tseslint.config([
-    globalIgnores(['dist']),
-    {
-        files: ['**/*.{ts,tsx}'],
-        extends: [
-            // Other configs...
-
-            // Remove tseslint.configs.recommended and replace with this
-            ...tseslint.configs.recommendedTypeChecked,
-            // Alternatively, use this for stricter rules
-            ...tseslint.configs.strictTypeChecked,
-            // Optionally, add this for stylistic rules
-            ...tseslint.configs.stylisticTypeChecked,
-
-            // Other configs...
-        ],
-        languageOptions: {
-            parserOptions: {
-                project: ['./tsconfig.node.json', './tsconfig.app.json'],
-                tsconfigRootDir: import.meta.dirname,
-            },
-            // other options...
-        },
-    },
-]);
+```
+.
+├── public/                 # Static assets (images, sitemap, logos)
+├── src/
+│   ├── assets/             # Static assets for import
+│   ├── components/         # Reusable UI components
+│   ├── data/               # Static data (majors, departments, news, etc.)
+│   ├── hooks/              # Custom React hooks
+│   ├── pages/              # Page components for routes
+│   ├── sections/           # Major page sections (Header, Footer, etc.)
+│   ├── utils.ts            # Utility functions
+│   ├── App.tsx             # App root component
+│   └── main.tsx            # Entry point
+├── index.html
+├── package.json
+├── tailwind.config.js
+├── vite.config.ts
+└── README.md
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Getting Started
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x';
-import reactDom from 'eslint-plugin-react-dom';
+### Prerequisites
 
-export default tseslint.config([
-    globalIgnores(['dist']),
-    {
-        files: ['**/*.{ts,tsx}'],
-        extends: [
-            // Other configs...
-            // Enable lint rules for React
-            reactX.configs['recommended-typescript'],
-            // Enable lint rules for React DOM
-            reactDom.configs.recommended,
-        ],
-        languageOptions: {
-            parserOptions: {
-                project: ['./tsconfig.node.json', './tsconfig.app.json'],
-                tsconfigRootDir: import.meta.dirname,
-            },
-            // other options...
-        },
-    },
-]);
+-   [Node.js](https://nodejs.org/) (v18+ recommended)
+-   [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Installation
+
+1. **Clone the repository:**
+
+    ```sh
+    git clone https://github.com/your-org/college-management.git
+    cd college-management/college
+    ```
+
+2. **Install dependencies:**
+
+    ```sh
+    npm install
+    # or
+    yarn install
+    ```
+
+3. **Start the development server:**
+
+    ```sh
+    npm run dev
+    # or
+    yarn dev
+    ```
+
+4. **Open your browser:**  
+   Visit [http://localhost:5173](http://localhost:5173) (or the port shown in your terminal).
+
+### Build for Production
+
+```sh
+npm run build
+# or
+yarn build
 ```
+
+### Linting
+
+```sh
+npm run lint
+# or
+yarn lint
+```
+
+## Customization
+
+-   **Content:**  
+    Update static data in [`src/data/`](src/data/) for majors, departments, news, etc.
+-   **Branding:**  
+    Replace images and logos in [`public/`](public/) and [`src/assets/`](src/assets/).
+-   **Styling:**  
+    Modify Tailwind CSS classes or extend the config as needed.
+
+## License
+
+This project is for educational and demonstration purposes.  
+For commercial use, please contact ITC College.
+
+---
+
+**ITC College**  
+12 Trịnh Đình Thảo, Phường Tân Phú, Thành phố Hồ Chí Minh  
+[info@itc.edu.vn](mailto:info@itc.edu.vn) | [tuyensinh@itc.edu.vn](mailto:tuyensinh@itc.edu.vn)

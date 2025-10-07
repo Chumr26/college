@@ -26,11 +26,11 @@ export function Select(props: {
                     required
                     className={`w-full border-4 border-black p-4 bg-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 tracking-wide appearance-none cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed outline-none ${props.className}`}
                 >
-                    <option value="" disabled selected>
+                    <option defaultValue={props.placeholder} value="" disabled>
                         {props.placeholder}
                     </option>
-                    {props.options.map((option) => (
-                        <option key={option} value={option}>
+                    {props.options.map((option, index) => (
+                        <option key={index} value={option}>
                             {option}
                         </option>
                     ))}

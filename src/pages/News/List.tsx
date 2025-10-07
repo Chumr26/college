@@ -2,9 +2,9 @@ import { Calendar, Clock, Eye, ArrowRight } from 'lucide-react';
 import { Button } from '../../components/Button';
 import { Card } from '../../components/Card';
 import { ImageWithFallback } from '../../components/ImageWithFallback';
-import { news } from '../../data/news';
+import type { NewsItem } from '../../data/news';
 
-export function List() {
+export function List({ news }: { news: NewsItem[] }) {
     return (
         <section className="bg-white py-20">
             <div className="container mx-auto px-4">

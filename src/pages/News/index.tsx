@@ -1,4 +1,6 @@
 import { Filter, Search } from 'lucide-react';
+
+import { news } from '../../data/news';
 import { Button } from '../../components/Button';
 import { List } from './List';
 
@@ -12,13 +14,6 @@ export function News() {
                         <div className="bg-white text-black px-4 py-2 border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] inline-block mb-6 uppercase tracking-wide">
                             TIN TỨC NHÀ TRƯỜNG
                         </div>
-                        {/* <h1 className="text-6xl md:text-8xl tracking-tighter uppercase mb-6 leading-none text-white">
-                            LATEST
-                            <br />
-                            <span className="bg-black text-white px-2">
-                                NEWS
-                            </span>
-                        </h1> */}
                         <p className="text-xl mb-8 tracking-wide uppercase text-white">
                             Cập nhật những thông tin mới nhất từ nhà trường
                         </p>
@@ -53,7 +48,7 @@ export function News() {
                 </div>
             </section>
 
-            <List />
+            <List news={news} />
         </div>
     );
 }
