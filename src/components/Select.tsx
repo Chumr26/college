@@ -7,7 +7,7 @@ export function Select(props: {
     disabled?: boolean;
     onChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
     value: string;
-    options: string[];
+    options: { label: string; value: string }[];
     className?: string;
     colSpan?: string;
 }) {
@@ -29,9 +29,9 @@ export function Select(props: {
                     <option defaultValue={props.placeholder} value="" disabled>
                         {props.placeholder}
                     </option>
-                    {props.options.map((option, index) => (
-                        <option key={index} value={option}>
-                            {option}
+                    {props.options.map((option) => (
+                        <option key={option.value} value={option.value}>
+                            {option.label}
                         </option>
                     ))}
                 </select>

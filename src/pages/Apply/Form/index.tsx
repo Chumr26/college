@@ -7,8 +7,6 @@ import { Background } from './Background';
 import { Submit } from './Submit';
 
 export type FormData = {
-    level: string;
-    major: string;
     lastMiddleName: string;
     firstName: string;
     gender: string;
@@ -30,8 +28,6 @@ export type FormData = {
 
 export function Form({ onSubmit }: { onSubmit: (value: boolean) => void }) {
     const [formData, setFormData] = useState<FormData>({
-        level: '',
-        major: '',
         lastMiddleName: '',
         firstName: '',
         gender: '',
@@ -83,11 +79,7 @@ export function Form({ onSubmit }: { onSubmit: (value: boolean) => void }) {
                     <div className="max-w-4xl mx-auto">
                         <form id="application-form" onSubmit={handleSubmit}>
                             {/* Education Level & Program */}
-                            <LevelProgram
-                                level={formData.level}
-                                major={formData.major}
-                                handleSelectChange={handleSelectChange}
-                            />
+                            <LevelProgram />
 
                             {/* Personal Information */}
                             <Personal
