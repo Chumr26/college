@@ -25,11 +25,9 @@ export const faculties = [
 
 export function Faculties() {
     return (
-        <section className="bg-black border-b-4 border-black py-20">
+        <section className="bg-black dark:bg-gray-900 border-b-4 border-black py-20">
             <div className="container mx-auto px-4">
                 <h2 className="text-5xl md:text-7xl tracking-tighter uppercase mb-16 text-center">
-                    {/* ACADEMIC
-                        <br /> */}
                     <span className="text-white px-2">KHOA</span>
                 </h2>
 

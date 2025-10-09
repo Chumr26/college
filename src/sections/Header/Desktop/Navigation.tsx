@@ -32,8 +32,10 @@ export function Navigation({
                         onClick={(e) => item.hasDropdown && e.preventDefault()}
                         className={({ isActive }) =>
                             `px-3 py-1 transition-colors border-2 border-transparent hover:bg-black hover:text-white hover:border-black ${
-                                isActive && 'bg-black text-white'
-                            } group-hover:bg-black group-hover:text-white`
+                                isActive && 'bg-black text-white dark:bg-white dark:text-black'
+                            } group-hover:bg-black group-hover:text-white
+                            dark:hover:bg-white dark:hover:text-black dark:hover:border-white
+                            `
                         }
                     >
                         {item.name}

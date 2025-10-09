@@ -1,4 +1,4 @@
-import './App.css';
+// import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router';
 
 import { RootLayout } from './pages/RootLayout';
@@ -10,6 +10,7 @@ import { InterUniversity } from './pages/AcademicAffairs/InterUniversity.tsx';
 import { Department } from './pages/Department/index.tsx';
 import { News } from './pages/News/index.tsx';
 import { Apply } from './pages/Apply/index.tsx';
+import { ThemeProvider } from './contextProvider/ThemeProvider.tsx';
 
 const router = createBrowserRouter([
     {
@@ -33,7 +34,11 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-    return <RouterProvider router={router} />;
+    return (
+        <ThemeProvider>
+            <RouterProvider router={router} />
+        </ThemeProvider>
+    );
 }
 
 export default App;

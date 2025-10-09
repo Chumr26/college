@@ -7,19 +7,21 @@ import { departments } from '../../data/departments';
 
 export function Departments() {
     return (
-        <section className="bg-gray-100 border-b-4 border-black py-20">
+        <section className="bg-gray-100 border-b-4 border-black py-20 dark:bg-gray-800">
             <div className="container mx-auto px-4">
                 <h2 className="text-5xl md:text-7xl tracking-tighter uppercase mb-16 text-center">
                     {/* ACADEMIC
                         <br /> */}
-                    <span className="bg-black text-white px-2">PHÒNG</span>
+                    <span className="bg-black text-white px-2 dark:bg-gray-100 dark:text-gray-900">
+                        PHÒNG
+                    </span>
                 </h2>
 
                 <div className="grid lg:grid-cols-2 gap-8">
                     {departments.map((department) => (
                         <Card
                             key={department.id}
-                            className="bg-white border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 hover:-translate-y-2 overflow-hidden"
+                            className="bg-white border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 hover:-translate-y-2 overflow-hidden dark:bg-gray-700 dark:border-gray-500 dark:shadow-gray-500"
                         >
                             {/* Department Image - Horizontal Layout */}
                             <div className="relative">
@@ -42,7 +44,7 @@ export function Departments() {
                                         <BookOpen className="w-4 h-4" />
                                         GIỚI THIỆU
                                     </h4>
-                                    <p className="text-sm tracking-wide text-gray-600 leading-relaxed">
+                                    <p className="text-sm tracking-wide text-gray-600 dark:text-gray-300 leading-relaxed">
                                         {department.introduction}
                                     </p>
                                 </div>
@@ -58,9 +60,9 @@ export function Departments() {
                                             (functionality, index) => (
                                                 <div
                                                     key={index}
-                                                    className="flex items-center gap-2 text-xs uppercase tracking-wide text-gray-600"
+                                                    className="flex items-center gap-2 text-xs uppercase tracking-wide text-gray-600 dark:text-gray-300"
                                                 >
-                                                    <div className="min-w-2 min-h-2 bg-black border border-black"></div>
+                                                    <div className="min-w-2 min-h-2 bg-black border border-black dark:bg-gray-600 dark:border-gray-500"></div>
                                                     {functionality}
                                                 </div>
                                             )
@@ -82,12 +84,12 @@ export function Departments() {
 
                                     {/* Contact Section */}
                                     <div className="border-t-2 border-black pt-4">
-                                        <div className="space-y-2">
-                                            <div className="flex items-center gap-2 text-xs uppercase tracking-wide text-gray-600">
+                                        <div className="space-y-2 text-xs uppercase tracking-wide text-gray-600 dark:text-gray-300">
+                                            <div className="flex items-center gap-2">
                                                 <Mail className="w-3 h-3" />
                                                 {department.email}
                                             </div>
-                                            <div className="flex items-center gap-2 text-xs uppercase tracking-wide text-gray-600">
+                                            <div className="flex items-center gap-2">
                                                 <Phone className="w-3 h-3" />
                                                 {department.phone}
                                             </div>

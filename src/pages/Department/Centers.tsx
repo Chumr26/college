@@ -2,15 +2,15 @@ import { Handshake, Mail, Phone } from 'lucide-react';
 
 export function Centers() {
     return (
-        <section className="bg-white text-white border-b-4 border-black py-20">
+        <section className="bg-white dark:bg-gray-800 text-white border-b-4 border-black py-20">
             <div className="container mx-auto px-4">
-                <h2 className="text-5xl md:text-7xl text-black tracking-tighter uppercase mb-16 text-center">
+                <h2 className="text-5xl md:text-7xl text-black dark:text-white tracking-tighter uppercase mb-16 text-center">
                     TRUNG
                     <br />
                     <span className="bg-black text-white px-2">TÂM</span>
                 </h2>
 
-                <div className="bg-blue-600 border-4 border-white shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] p-8">
+                <div className="bg-blue-600 border-4 border-white dark:border-gray-400 dark:shadow-gray-400 shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] p-8">
                     <Handshake className="w-12 h-12 mb-4 text-white" />
                     <h3 className="text-2xl mb-3 tracking-tighter uppercase">
                         TRUNG TÂM QUAN HỆ DOANH NGHIỆP VÀ HỖ TRỢ SINH VIÊN

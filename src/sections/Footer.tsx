@@ -5,6 +5,7 @@ import React from 'react';
 import college_logo from '/college_logo.svg';
 import { faculties } from '../pages/Department/Faculties';
 import { departments } from '../data/departments';
+import { useTheme } from '../hooks/useThemeContext';
 
 export const collegeInfo = {
     contacts: [
@@ -42,8 +43,9 @@ export const collegeInfo = {
 };
 
 export function Footer() {
+    const [theme, toggleTheme] = useTheme();
     return (
-        <footer id="contact" className="bg-black text-white py-16">
+        <footer id="contact" className="bg-black dark:bg-gray-900 text-white dark:text-gray-100 py-16">
             <div className="container mx-auto px-4">
                 <div className="grid md:grid-cols-[2fr_0.7fr_1.3fr_1.3fr_0.7fr] gap-12 w-fit mx-auto md:mx-0 ">
                     <div>
@@ -157,6 +159,14 @@ export function Footer() {
                 </div>
 
                 <div className="border-t-4 border-white mt-12 pt-8 text-center uppercase tracking-wide">
+                    <label className="flex items-center justify-center gap-2">
+                        <input
+                            type="checkbox"
+                            onChange={toggleTheme}
+                            checked={theme === 'dark'}
+                        />
+                        Toggle Theme (T)
+                    </label>
                     <p>
                         &copy; 2025 ITC. XÂY DỰNG BỞI{' '}
                         <span className="text-blue-500">CHỦM</span>.

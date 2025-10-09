@@ -6,10 +6,10 @@ export function Hero() {
             <div className="container mx-auto px-4">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     <div>
-                        <h1 className="text-6xl md:text-8xl tracking-tighter uppercase mb-6 leading-none text-white">
+                        <h1 className="text-6xl md:text-8xl tracking-tighter uppercase mb-6 leading-none text-white dark:text-gray-900">
                             PHÒNG
                             <br />
-                            <span className="bg-white text-black px-2">
+                            <span className="bg-white text-black px-2 dark:bg-gray-800 dark:text-gray-100">
                                 KHOA
                             </span>
                             <br />

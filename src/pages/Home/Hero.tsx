@@ -12,12 +12,12 @@ function Hero() {
             <div className="container mx-auto px-4 py-20">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     <div>
-                        <h1 className="text-6xl md:text-8xl tracking-tighter uppercase mb-6 leading-none">
+                        <h1 className="text-6xl md:text-8xl tracking-tighter uppercase mb-6 leading-none dark:text-gray-100 text-black">
                             VỮNG
                             <br />
                             BƯỚC
                             <br />
-                            <span className="bg-black text-white px-2">
+                            <span className="bg-black text-white dark:bg-gray-100 dark:text-black px-2">
                                 TƯƠNG LAI
                             </span>
                         </h1>
@@ -36,7 +36,7 @@ function Hero() {
                             <NavLink to="/about" className="w-full md:w-auto">
                                 <Button
                                     variant="outline"
-                                    className="w-full md:w-auto border-4 border-white bg-transparent text-white hover:bg-white hover:text-black shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] active:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] transition-all duration-200 px-8 py-6 uppercase tracking-wide"
+                                    className="w-full md:w-auto border-4 border-white bg-transparent text-white hover:bg-white hover:text-black shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] active:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] transition-all duration-200 px-8 py-6 uppercase tracking-wide dark:hover:text-black"
                                 >
                                     GIỚI THIỆU
                                 </Button>

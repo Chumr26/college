@@ -2,12 +2,12 @@ import { Eye, Target } from "lucide-react";
 
 export function VisionMission() {
     return (
-        <section className="bg-white border-b-4 border-black py-20 text-justify">
+        <section className="bg-white dark:bg-gray-800 border-b-4 border-black py-20 text-justify">
             <div className="container mx-auto px-4">
-                <h2 className="text-5xl md:text-7xl tracking-tighter uppercase mb-16 text-center">
+                <h2 className="text-5xl md:text-7xl tracking-tighter uppercase mb-16 text-center dark:text-gray-100">
                     TẦM NHÌN
                     <br />
-                    <span className="bg-black text-white px-2">SỨ MỆNH</span>
+                    <span className="bg-black text-white px-2 dark:bg-gray-100 dark:text-gray-900">SỨ MỆNH</span>
                 </h2>
 
                 <div className="grid lg:grid-cols-2 gap-8 text-white">

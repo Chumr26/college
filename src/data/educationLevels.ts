@@ -8,6 +8,7 @@ import { interUniversityMajors } from './interUniversityMajors';
 export type EducationLevel = {
     title: string;
     bgColor: string;
+    darkBgColor: string;
     duration: string;
     fields: string;
     students: string;
@@ -22,6 +23,7 @@ export const educationLevels: EducationLevel[] = [
     {
         title: 'CAO ĐẲNG 9+',
         bgColor: 'bg-red-500',
+        darkBgColor: 'dark:bg-red-900',
         duration: '2,5 NĂM',
         fields: '6 NGÀNH',
         students: '8,000+',
@@ -34,6 +36,7 @@ export const educationLevels: EducationLevel[] = [
     {
         title: 'CAO ĐẲNG',
         bgColor: 'bg-blue-500',
+        darkBgColor: 'dark:bg-blue-900',
         duration: '2 NĂM',
         fields: '20 NGÀNH',
         students: '28,500+',
@@ -46,6 +49,7 @@ export const educationLevels: EducationLevel[] = [
     {
         title: 'LIÊN THÔNG',
         bgColor: 'bg-yellow-400',
+        darkBgColor: 'dark:bg-yellow-900',
         duration: '1,5 NĂM',
         fields: '9 NGÀNH',
         students: '1,500+',
