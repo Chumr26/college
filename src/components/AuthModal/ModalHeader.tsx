@@ -17,7 +17,9 @@ export function ModalHeader({
         >
             <button
                 onClick={resetAndClose}
-                className="absolute top-4 right-4 bg-white border-2 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 p-2"
+                className="absolute top-4 right-4 bg-white border-2 border-black 
+                shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] 
+                transition-all duration-200 p-2"
             >
                 <X className="w-4 h-4" />
             </button>

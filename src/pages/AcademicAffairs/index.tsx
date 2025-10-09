@@ -16,7 +16,7 @@ export function AcademicAffairs({
             <Hero level={level} />
 
             {/* Available Majors Accordion */}
-            <section className="bg-gray-50 border-b-4 border-black py-20">
+            <section className="bg-gray-50 border-b-4 border-black py-20 dark:bg-gray-800">
                 <div className="container mx-auto px-4">
                     <h2 className="text-5xl md:text-7xl tracking-tighter uppercase mb-16 text-center">
                         NGÀNH

@@ -51,7 +51,10 @@ export function Personal({
                     onChange={(e) =>
                         handleSelectChange('gender', e.target.value)
                     }
-                    options={['Nam', 'Nữ']}
+                    options={[
+                        { label: 'Nam', value: 'Nam' },
+                        { label: 'Nữ', value: 'Nữ' },
+                    ]}
                 />
                 <Field
                     label="NGÀY SINH *"
@@ -70,7 +73,7 @@ export function Personal({
                     }
                     placeholder="Nhập nơi sinh"
                     className="py-1"
-                    options={vietnamProvinces}
+                    options={vietnamProvinces.map((province) => ({ label: province, value: province }))}
                 />
                 <Select
                     name="ethnicGroup"
@@ -81,7 +84,7 @@ export function Personal({
                     }
                     placeholder="Nhập dân tộc"
                     className="py-1"
-                    options={vietnamEthnicGroups}
+                    options={vietnamEthnicGroups.map((group) => ({ label: group, value: group }))}
                 />
                 <Field
                     label="SỐ CMND/CCCD *"

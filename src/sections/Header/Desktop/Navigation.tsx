@@ -32,7 +32,8 @@ export function Navigation({
                         onClick={(e) => item.hasDropdown && e.preventDefault()}
                         className={({ isActive }) =>
                             `px-3 py-1 transition-colors border-2 border-transparent hover:bg-black hover:text-white hover:border-black ${
-                                isActive && 'bg-black text-white dark:bg-white dark:text-black'
+                                isActive &&
+                                'bg-black text-white dark:bg-white dark:text-black'
                             } group-hover:bg-black group-hover:text-white
                             dark:hover:bg-white dark:hover:text-black dark:hover:border-white
                             `
@@ -44,7 +45,10 @@ export function Navigation({
                     {item.hasDropdown && dropDown === 'academic-affairs' && (
                         <>
                             <div className="absolute h-2 w-full top-full" />
-                            <div className="absolute top-[calc(100%+8px)] left-0 w-80 bg-white border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] z-50">
+                            <div
+                                className="absolute top-[calc(100%+8px)] left-0 w-80 bg-white border-4 border-black 
+                            shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] z-50 dark:bg-gray-900 dark:border-gray-100 dark:shadow-gray-100"
+                            >
                                 <div className="p-6 space-y-3">
                                     {educationLevels.map((submenu, index) => (
                                         <NavLink
@@ -58,12 +62,16 @@ export function Navigation({
                                             {({ isActive }) => (
                                                 <>
                                                     <div
-                                                        className={`${submenu.bgColor} border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] group-hover/item:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 group-hover/item:-translate-y-1 p-4`}
+                                                        className={`${submenu.bgColor} border-2 border-black 
+                                                            shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] 
+                                                            group-hover/item:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] 
+                                                            transition-all duration-200 group-hover/item:-translate-y-1 
+                                                            p-4 dark:border-gray-50 dark:shadow-gray-50`}
                                                     >
                                                         {submenu.title}
                                                     </div>
                                                     {isActive && (
-                                                        <span className="absolute top-0 -left-3 bottom-1 bg-black w-0.5"></span>
+                                                        <span className="absolute top-0 -left-3 bottom-1 bg-black dark:bg-gray-50 w-0.5"></span>
                                                     )}
                                                 </>
                                             )}

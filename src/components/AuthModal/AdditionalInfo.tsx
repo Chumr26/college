@@ -1,7 +1,7 @@
 export function AdditionalInfo({ authMode }: { authMode: 'login' | 'forgot' }) {
     return (
         <div className="mt-6 bg-gray-100 border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] p-6">
-            <h4 className="text-sm uppercase tracking-wide mb-3">
+            <h4 className="text-sm uppercase tracking-wide mb-3 dark:text-black">
                 {authMode === 'login'
                     ? 'CỔNG THÔNG TIN SINH VIÊN'
                     : 'BẢO MẬT TÀI KHOẢN'}

@@ -19,7 +19,7 @@ export function RememberMe({
                     onCheckedChange={(checked) =>
                         handleInputChange('rememberMe', checked)
                     }
-                    className="border-2 border-black"
+                    className="border-2 border-black dark:border-gray-100 dark:bg-gray-500"
                 />
                 <Label
                     htmlFor="rememberMe"

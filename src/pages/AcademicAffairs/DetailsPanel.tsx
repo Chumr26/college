@@ -6,15 +6,6 @@ import { MetricsCard } from './MetricsCard';
 export function DetailsPanel({ major }: { major: Major }) {
     return (
         <div className="grid lg:grid-cols-2 gap-8">
-            {/* <InfoCard
-                color={major.color}
-                image={major.image}
-                name={major.name}
-                description={major.description}
-                employmentRate={major.employmentRate}
-                averageSalary={major.averageSalary}
-            /> */}
-
             {/* Highlights Card */}
             <HighlightsCard
                 introduction={major.introduction}

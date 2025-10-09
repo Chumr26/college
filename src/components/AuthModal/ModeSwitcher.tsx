@@ -41,7 +41,9 @@ export function ModeSwitcher({
                         type="button"
                         onClick={switchToForgot}
                         variant="outline"
-                        className="border-4 border-black bg-white text-black hover:bg-black hover:text-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 px-6 py-3 uppercase tracking-wide"
+                        className="border-4 border-black bg-white text-black hover:bg-black 
+                        hover:text-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] 
+                        transition-all duration-200 px-6 py-3 uppercase tracking-wide dark:hover:text-black"
                     >
                         ĐẶT LẠI MẬT KHẨU
                         <Key className="w-4 h-4 ml-2" />
@@ -56,7 +58,9 @@ export function ModeSwitcher({
                         type="button"
                         onClick={switchToLogin}
                         variant="outline"
-                        className="border-4 border-black bg-white text-black hover:bg-black hover:text-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 px-6 py-3 uppercase tracking-wide"
+                        className="border-4 border-black bg-white text-black hover:bg-black hover:text-white 
+                        shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] 
+                        transition-all duration-200 px-6 py-3 uppercase tracking-wide dark:hover:text-black"
                     >
                         <ArrowLeft className="w-4 h-4 mr-2" />
                         TRỞ VỀ ĐĂNG NHẬP

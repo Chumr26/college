@@ -29,8 +29,8 @@ export function Select(props: {
                     <option defaultValue={props.placeholder} value="" disabled>
                         {props.placeholder}
                     </option>
-                    {props.options.map((option) => (
-                        <option key={option.value} value={option.value}>
+                    {props.options.map((option, index) => (
+                        <option key={index} value={option.value}>
                             {option.label}
                         </option>
                     ))}

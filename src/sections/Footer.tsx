@@ -1,6 +1,6 @@
 /* eslint-disable react-refresh/only-export-components */
-import { Mail, MapPin, Phone } from 'lucide-react';
-import React from 'react';
+import { HelpCircle, Mail, MapPin, Moon, Phone, Sun } from 'lucide-react';
+import React, { useState } from 'react';
 
 import college_logo from '/college_logo.svg';
 import { faculties } from '../pages/Department/Faculties';
@@ -44,8 +44,13 @@ export const collegeInfo = {
 
 export function Footer() {
     const [theme, toggleTheme] = useTheme();
+    const [showTooltip, setShowTooltip] = useState(false);
+
     return (
-        <footer id="contact" className="bg-black dark:bg-gray-900 text-white dark:text-gray-100 py-16">
+        <footer
+            id="contact"
+            className="bg-black dark:bg-gray-900 text-white dark:text-gray-100 py-16"
+        >
             <div className="container mx-auto px-4">
                 <div className="grid md:grid-cols-[2fr_0.7fr_1.3fr_1.3fr_0.7fr] gap-12 w-fit mx-auto md:mx-0 ">
                     <div>
@@ -159,14 +164,40 @@ export function Footer() {
                 </div>
 
                 <div className="border-t-4 border-white mt-12 pt-8 text-center uppercase tracking-wide">
-                    <label className="flex items-center justify-center gap-2">
-                        <input
-                            type="checkbox"
-                            onChange={toggleTheme}
-                            checked={theme === 'dark'}
-                        />
-                        Toggle Theme (T)
-                    </label>
+                    <div className="flex justify-center items-center mb-4 gap-2">
+                        <button
+                            onClick={toggleTheme}
+                            className="relative flex items-center justify-between w-16 h-8 bg-gray-200 
+                            dark:bg-gray-700 rounded-full p-1 transition-colors duration-300"
+                        >
+                            <div
+                                className={`absolute top-1 left-1 w-6 h-6 bg-white dark:bg-gray-900 
+                                    rounded-full shadow-md transform transition-transform duration-300 ${
+                                        theme === 'dark'
+                                            ? 'translate-x-8'
+                                            : 'translate-x-0'
+                                    }`}
+                            />
+                            <Sun className="w-4 h-4 text-yellow-500 absolute left-2" />
+                            <Moon className="w-4 h-4 text-blue-400 absolute right-2" />
+                        </button>
+                        <div
+                            className="relative"
+                            onMouseEnter={() => setShowTooltip(true)}
+                            onMouseLeave={() => setShowTooltip(false)}
+                        >
+                            <HelpCircle className="w-5 h-5 text-gray-500 dark:text-gray-300 cursor-pointer" />
+                            {showTooltip && (
+                                <div className="absolute left-6 top-1/2 -translate-y-1/2 bg-gray-800 text-white text-sm rounded-md px-3 py-1 shadow-lg whitespace-nowrap">
+                                    Press{' '}
+                                    <span className="font-semibold">
+                                        Alt + T
+                                    </span>{' '}
+                                    to toggle theme
+                                </div>
+                            )}
+                        </div>
+                    </div>
                     <p>
                         &copy; 2025 ITC. XÂY DỰNG BỞI{' '}
                         <span className="text-blue-500">CHỦM</span>.

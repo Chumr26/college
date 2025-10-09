@@ -10,6 +10,7 @@ import { Submit } from './Submit';
 import { ModeSwitcher } from './ModeSwitcher';
 import { AdditionalInfo } from './AdditionalInfo';
 import { Help } from './Help';
+import { useTheme } from '../../hooks/useThemeContext';
 
 interface AuthModalProps {
     isOpen: boolean;
@@ -17,6 +18,7 @@ interface AuthModalProps {
 }
 
 export function AuthModal({ isOpen, onClose }: AuthModalProps) {
+    const [theme] = useTheme();
     const [authMode, setAuthMode] = useState<'login' | 'forgot'>('login');
     const [showPassword, setShowPassword] = useState(false);
     const [formData, setFormData] = useState({
@@ -61,7 +63,12 @@ export function AuthModal({ isOpen, onClose }: AuthModalProps) {
 
     return (
         <Dialog open={isOpen} onOpenChange={resetAndClose}>
-            <DialogContent className="max-w-lg p-0 bg-white border-4 border-black shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] gap-0">
+            <DialogContent
+                className={`max-w-lg p-0 bg-white border-4 border-black gap-0 
+                shadow-[12px_12px_0px_0px_rgba(0,0,0,1)]
+                ${theme === 'dark' ? 'dark' : 'light'}
+                `}
+            >
                 <DialogHeader className="p-0">
                     {/* Modal Header */}
                     <ModalHeader
@@ -71,7 +78,7 @@ export function AuthModal({ isOpen, onClose }: AuthModalProps) {
                 </DialogHeader>
 
                 {/* Modal Content */}
-                <div className="p-8">
+                <div className="p-8 dark:bg-gray-800 dark:text-white">
                     <form onSubmit={handleSubmit} className="space-y-6">
                         {/* Email Field */}
                         <Email

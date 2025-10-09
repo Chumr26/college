@@ -20,7 +20,8 @@ export function Email({
                 type="email"
                 value={formData.email}
                 onChange={(e) => handleInputChange('email', e.target.value)}
-                className="border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] focus:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 tracking-wide"
+                className="border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] 
+                focus:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 tracking-wide"
                 placeholder="sinhvien@itc.edu.vn"
                 required
             />

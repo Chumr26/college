@@ -10,7 +10,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
 
     useEffect(() => {
         const handleKeyPress = (event: KeyboardEvent) => {
-            if (event.key === 't') {
+            if (event.altKey && event.key.toLowerCase() === 't') {
                 toggleTheme();
             }
         };

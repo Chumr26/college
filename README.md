@@ -87,6 +87,14 @@ npm run build
 yarn build
 ```
 
+### Preview Production Build
+
+```sh
+npm run preview
+# or
+yarn preview
+```
+
 ### Linting
 
 ```sh

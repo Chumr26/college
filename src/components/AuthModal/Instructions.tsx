@@ -2,7 +2,7 @@ export function Instructions({ authMode }: { authMode: 'login' | 'forgot' }) {
     return (
         authMode === 'forgot' && (
             <div className="bg-gray-100 border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] p-6">
-                <h4 className="text-sm uppercase tracking-wide mb-3">
+                <h4 className="text-sm uppercase tracking-wide mb-3 dark:text-black">
                     HƯỚNG DẪN ĐẶT LẠI MẬT KHẨU
                 </h4>
                 <div className="space-y-2 text-xs uppercase tracking-wide text-gray-600">
