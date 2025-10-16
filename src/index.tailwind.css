@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -135,7 +135,7 @@
  * Base typography. This is not applied to elements which have an ancestor with a Tailwind text class.
  */
 @layer base {
-    :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) {
+    :where(:not(:has([class*=' text-']), :not(:has([class^='text-'])))) {
         h1 {
             font-size: var(--text-2xl);
             font-weight: var(--font-weight-medium);
@@ -194,8 +194,8 @@ input::-ms-reveal {
     display: none;
 }
 
-input[type="date"]::-webkit-inner-spin-button,
-input[type="date"]::-webkit-calendar-picker-indicator {
+input[type='date']::-webkit-inner-spin-button,
+input[type='date']::-webkit-calendar-picker-indicator {
     font-size: 18px;
     position: absolute;
     left: 12px;
@@ -204,15 +204,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 /* For WebKit browsers (Chrome, Safari, Edge, Opera) */
-#application-form input[type="number"]::-webkit-inner-spin-button,
-#application-form input[type="number"]::-webkit-outer-spin-button {
+#application-form input[type='number']::-webkit-inner-spin-button,
+#application-form input[type='number']::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
     /* Optional: Removes any default margin */
 }
 
 /* For Firefox */
-#application-form input[type="number"] {
+#application-form input[type='number'] {
     appearance: textfield;
     -moz-appearance: textfield;
 }

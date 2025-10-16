@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { NavLink } from 'react-router';
 
 import { Button } from '../../components/Button';
@@ -18,9 +19,19 @@ function EducationLevels() {
 
                 <div className="grid md:grid-cols-3 gap-8">
                     {educationLevels.map((level, index) => (
-                        <div
+                        <motion.div
                             key={index}
-                            className={`${level.bgColor} border-4 border-black dark:border-gray-200 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 hover:-translate-y-2 overflow-hidden dark:shadow-gray-200`}
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{
+                                duration: 0.5,
+                                delay: index * 0.2,
+                                ease: 'linear',
+                            }}
+                            // viewport={{ once: true }}
+                            className={`${level.bgColor} border-4 border-black dark:border-gray-200 
+                                shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] 
+                                transition-all duration-200 hover:-translate-y-2 overflow-hidden dark:shadow-gray-200`}
                         >
                             <div className="relative">
                                 <ImageWithFallback
@@ -48,12 +59,17 @@ function EducationLevels() {
                                     </div>
                                 </div>
                                 <NavLink to={'academic-affairs/' + level.href}>
-                                    <Button className="w-full bg-white dark:bg-gray-100 text-black border-4 border-black hover:bg-black hover:text-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 uppercase tracking-wide py-4">
+                                    <Button
+                                        className="w-full bg-white dark:bg-gray-100 text-black border-4 border-black 
+                                    hover:bg-black hover:text-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] 
+                                    hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 
+                                    uppercase tracking-wide py-4"
+                                    >
                                         THÔNG TIN CHI TIẾT
                                     </Button>
                                 </NavLink>
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
             </div>
